@@ -15,7 +15,7 @@ order: 4
 
 ## Education
 
-* 2021-present B.S. in Systems Biology & Computer Science, Yonsei University
+* 2021-present B.S. in Systems Biology, Yonsei University
 
 ## Career History
 
