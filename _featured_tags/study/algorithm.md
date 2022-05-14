@@ -2,9 +2,9 @@
 layout: list
 category: Study
 bigtitle: Bioinformatics Algorithm
-slug: ba
+slug: algorithm
 description: >
-    Studying for a book "Bioinformatics Algorithm"
+    Studying a book "Bioinformatics Algorithm"
 
 related_posts:
     -

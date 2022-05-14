@@ -17,6 +17,6 @@ accent_image:
 
 ## Category
 
-- [Bioinformatics Algorithm]{:.heading.flip-title} --- studying for a book "Bioinformatics Algorithm"
+- [Bioinformatics Algorithm]{:.heading.flip-title} --- studying a book "Bioinformatics Algorithm"
 
-[Bioinformatics Algorithm]: /bioinformatics_algorithm/
+[Bioinformatics Algorithm]: /tag/algorithm/

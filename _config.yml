@@ -54,12 +54,12 @@ copyright:             © 2017. All rights reserved.
 # Add links to the sidebar.
 menu:
   - title:              About
-    url:                /mygitblog/
+    url:                /about/
   - title:              Study
     url:                /study/
     submenu:
       - title:          Bioinformatics Algorithm
-      - url:            /ba/
+      - url:            /algorithm/
   - title:              Project
     url:                /project/
 
