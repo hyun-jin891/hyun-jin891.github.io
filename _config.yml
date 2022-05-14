@@ -57,6 +57,9 @@ menu:
     url:                /mygitblog/
   - title:              Study
     url:                /study/
+    submenu:
+      - title:          Bioinformatics Algorithm
+      - url:            /ba/
   - title:              Project
     url:                /project/
 
