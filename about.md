@@ -8,6 +8,8 @@ description:
   
 menu: true
 order: 4
+categories:
+  - about
 ---
 
 저는 연세대학교 생명시스템대학 시스템생물학과 학부생입니다. **Bioinformatics** 분야에 관심을 가지고 공부하고 있으며 생물학 연구에 도움을 줄 **computational tool**을 개발하는 엔지니어가 되는 것이 목표입니다.

@@ -51,6 +51,16 @@ author:
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             © 2017. All rights reserved.
 
+# Add links to the sidebar.
+menu:
+  - title:              About
+    url:                /mygitblog/
+  - title:              Study
+    url:                /study/
+  - title:              Project
+    url:                /project/
+
+
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
 # legal:
@@ -71,7 +81,7 @@ paginate_path:         /page-:num/
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/bioinformatics-image.jpg
 accent_color:          '#4fb1ba'
 
 # The string encoding which fonts to fetch from Google Fonts.
