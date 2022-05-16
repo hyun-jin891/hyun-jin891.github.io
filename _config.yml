@@ -37,7 +37,7 @@ tagline:
 keywords:              [Bioinformatics, Biology, Statistics, Algorithm]
 
 # Used by jekyll-seo-tag...
-logo:                  /assets/icons/icon.png
+logo:                  /assets/icons/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
