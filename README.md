@@ -8,9 +8,9 @@
 
 **Study**
 
-Bioinformatics Algorithm
-Biology
-Computer Science
+- Bioinformatics Algorithm
+- Biology
+- Computer Science
 
 
 
