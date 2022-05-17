@@ -1,7 +1,7 @@
 # My blog
 
 
-안녕하세요 저는 연세대학교 시스템생물학과 학부생으로 **Bioinformatics** 분야에 관심을 가지고 있고 생물학 연구에 도움을 줄
+안녕하세요 저는 연세대학교 시스템생물학과 학부생으로 **Bioinformatics** 분야에 관심을 가지고 있으며, 생물학 연구에 도움을 줄
 **computational tool**을 개발하는 엔지니어가 되는 것이 꿈입니다. 
 
 제가 공부한 내용이나 프로젝트 등을 기록하는 용도로 블로그를 만들어 사용하고 있습니다.
@@ -11,6 +11,8 @@
 - Bioinformatics Algorithm
 - Biology
 - Computer Science
+- Baekjoon
+- Rosalind
 
 
 
