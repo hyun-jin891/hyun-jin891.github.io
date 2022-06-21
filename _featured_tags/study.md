@@ -21,9 +21,11 @@ accent_image:
 - [Biology]{:.heading.flip-title} --- Cell biology, Genetics, Microbiology, Molecular biology, Biochemistry, animal physiology, plant, etc
 - [Rosalind]{:.heading.flip-title} --- solving rosalind problems
 - [Computer Science]{:.heading.flip-title} --- Algorithm, Data Sturcture, OOP, OS, etc
+- [Statistics]{:.heading.flip-title} --- Studying statistics
 
 
 [Bioinformatics Algorithm]: /tag/bioinformatics-algorithm/
 [Biology]: /tag/biology/
 [Rosalind]: /tag/rosalind/
 [Computer Science]: /tag/computer-science/
+[Statistics]: /tag/statistics/

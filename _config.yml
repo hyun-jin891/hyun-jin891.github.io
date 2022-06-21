@@ -68,6 +68,10 @@ menu:
       - url:            /rosalind/
     submenu:
       - title:          Computer Science
+      - url:            /computer_science/
+    submenu:
+      - title:          Statistics
+      - url:            /statistics/
   - title:              Project
     url:                /project/
 
