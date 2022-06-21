@@ -18,7 +18,7 @@ accent_image:
 ## Category
 
 - [Bioinformatics Algorithm]{:.heading.flip-title} --- studying a book "Bioinformatics Algorithm"
-- [Biology]{:.heading.flip-title} --- Cell biology, Genetics, Microbiology, Molecular biology, Biochemistry, animal physiology, plant, etc
+- [Biology]{:.heading.flip-title} --- Cell biology, Genetics, Microbiology, Molecular biology, Biochemistry, Animal physiology, Plant, etc
 - [Rosalind]{:.heading.flip-title} --- solving rosalind problems
 - [Computer Science]{:.heading.flip-title} --- Algorithm, Data Sturcture, OOP, OS, etc
 - [Statistics]{:.heading.flip-title} --- Studying statistics
