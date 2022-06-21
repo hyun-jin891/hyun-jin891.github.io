@@ -59,7 +59,15 @@ menu:
     url:                /study/
     submenu:
       - title:          Bioinformatics Algorithm
-      - url:            /algorithm/
+      - url:            /bioinformatics_algorithm/
+    submenu:
+      - title:          Biology
+      - url:            /biology/
+    submenu:
+      - title:          Rosalind
+      - url:            /rosalind/
+    submenu:
+      - title:          Computer Science
   - title:              Project
     url:                /project/
 
