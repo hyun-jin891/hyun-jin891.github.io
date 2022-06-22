@@ -58,8 +58,11 @@ menu:
   - title:              Study
     url:                /study/
     submenu:
+      - title:          Total contents
+      - url:            /total contents/
+    submenu:
       - title:          Bioinformatics Algorithm
-      - url:            /bioinformatics_algorithm/
+      - url:            /bioinformatics algorithm/
     submenu:
       - title:          Biology
       - url:            /biology/
