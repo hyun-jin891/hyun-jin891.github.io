@@ -27,12 +27,12 @@ C P G A V I L M F W Q S Y N T D E K R H
 * N : N-linked glycosylation
 * K : ubiquitination
 
-![그림1](/assets/img/1.png){: width="600" height="600"}
-![그림2](/assets/img/2.png){: width="600" height="600"}
-![그림3](/assets/img/3.png){: width="600" height="600"}
-![그림4](/assets/img/4.png){: width="600" height="600"}
-![그림5](/assets/img/5.png){: width="600" height="600"}
-![그림6](/assets/img/6.png){: width="600" height="600"}
+![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/1.PNG?raw=true){: width="600" height="600"}
+![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/2.PNG?raw=true){: width="600" height="600"}
+![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/3.PNG?raw=true){: width="600" height="600"}
+![그림4](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/4.png?raw=true){: width="600" height="600"}
+![그림5](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/5.PNG?raw=true){: width="600" height="600"}
+![그림6](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/6.PNG?raw=true){: width="600" height="600"}
 
 ### * Noncovalent bonds
 contribute to **flexible** 3D structure of macromolecule
