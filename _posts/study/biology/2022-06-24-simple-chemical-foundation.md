@@ -9,7 +9,7 @@ categories:
   - study
   - biology
 ---
-
+### Simple chemical foundation
 ### * Amino acid
 Basic structure: alpha-carbon + carboxyl group + amino group + side chain + hydrogen
 
