@@ -4,7 +4,7 @@ title: Simple chemical foundation
 description: >
   Biochemistry, Cell biology
 tags: [chemical foundation]
-
+use_math: true
 categories:
   - study
   - biology
