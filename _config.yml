@@ -48,7 +48,7 @@ author:
   # twitter:             <username>
 
 
-# Math equation
+# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
