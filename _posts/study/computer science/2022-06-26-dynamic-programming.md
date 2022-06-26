@@ -35,6 +35,7 @@ categories:
 calculated result will be stored in DP table
 
 * Top-down (fibonacci)
+
 ~~~python
 dp = [0] * 1000
 def fibonacci(x):
@@ -46,7 +47,8 @@ def fibonacci(x):
   return dp[x]
 ~~~
 
-* Bottom up
+* Bottom up (fibonacci)
+
 ~~~python
 dp = [0] * 100
 dp[1] = 1
