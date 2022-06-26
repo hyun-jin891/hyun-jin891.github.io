@@ -22,7 +22,7 @@ categories:
 
   * mainly use recursion
 
-  * recursion's problem : unnecessary repeating calculation → solving by Top-down
+  * recursion's problem : unnecessary repeating calculation → solving by Top-down <br>
   *ex) fibonacci*
 
   ![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/14.png?raw=true){: width="600" height="600"}

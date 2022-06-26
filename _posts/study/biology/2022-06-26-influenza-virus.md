@@ -17,7 +17,7 @@ negative ssRNA virus (Baltimore classification: V type)
   * Type1 membrane protein
   * In ER, 3 x HA0 (**trimer**)
   * In Golgi, 3 x (HA1-disulfide bonds-HA2)
-  * recognizes sialic acid (NANA, N-actylneraminic acid)
+  * recognizes sialic acid (NANA, N-actylneraminic acid) <br>
     *ex) **Human**: Neu5ACα2,6Gal... **Bird**: Neu5ACα2,3Gal... **Pig: both***
 
 ### * Escape from lysosome

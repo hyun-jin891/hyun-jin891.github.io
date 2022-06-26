@@ -13,7 +13,7 @@ categories:
 ### * Amino acid
 Basic structure: alpha-carbon + carboxyl group + amino group + side chain + hydrogen
 
-* D-form vs L-form : mainly L-form for protein / but D-form can be used. **ex)** peptidoglycan
+* D-form vs L-form : mainly L-form for protein / but D-form can be used. <br> **ex)** peptidoglycan
 * 20 aa for translation
 C P G A V I L M F W Q S Y N T D E K R H
 * C: can form disulfide bond
