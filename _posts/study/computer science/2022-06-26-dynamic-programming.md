@@ -25,7 +25,7 @@ categories:
   * recursion's problem : unnecessary repeating calculation → solving by Top-down
   *ex) fibonacci*
 
-  ![그림1](/assets/img/14.PNG?raw=true){: width="600" height="600"}
+  ![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/14.png?raw=true){: width="600" height="600"}
 
 * Bottom up (mainly use)
   * solving a small problem and stored in memory → using for solving a next problem
