@@ -19,7 +19,7 @@ group :jekyll_plugins do
   gem install nokogiri
   # gem "jekyll-avatar"
   # gem "jekyll-default-layout"
-  gem "jekyll-feed"
+  #gem "jekyll-feed"
   # gem "jekyll-gist"
   # gem "jekyll-optional-front-matter"
   gem "jekyll-paginate"
