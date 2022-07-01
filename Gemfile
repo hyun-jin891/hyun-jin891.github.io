@@ -16,10 +16,9 @@ gem "jekyll"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem install nokogiri
   # gem "jekyll-avatar"
   # gem "jekyll-default-layout"
-  #gem "jekyll-feed"
+  gem "jekyll-feed"
   # gem "jekyll-gist"
   # gem "jekyll-optional-front-matter"
   gem "jekyll-paginate"
@@ -29,7 +28,7 @@ group :jekyll_plugins do
   # gem "jekyll-remote-theme"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
-  gem "bcrypt"
+
   # gem "jekyll-titles-from-headings"
 end
 
