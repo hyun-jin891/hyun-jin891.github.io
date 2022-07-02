@@ -2,7 +2,7 @@
 layout: post
 title: Basic computer science
 description: >
-  Basic computer science
+  Computer Science:An Overview (reference)
 tags: [basic computer science]
 use_math: true
 categories:
@@ -10,7 +10,6 @@ categories:
   - computer science
 ---
 ### Basic computer science (incomplete)
-studying "Computer Science:An Overview"
 
 ### Data
 

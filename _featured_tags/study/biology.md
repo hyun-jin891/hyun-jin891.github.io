@@ -11,5 +11,5 @@ tags: [biology]
 related_posts:
     -
 list: true
-order: 3
+order: 2
 ---

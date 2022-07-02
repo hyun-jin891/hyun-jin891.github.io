@@ -2,7 +2,7 @@
 layout: post
 title: Simple chemical foundation
 description: >
-  Biochemistry, Cell biology
+  Molecular Cell Biology Lodish (reference)
 tags: [chemical foundation]
 use_math: true
 categories:

@@ -11,5 +11,5 @@ tags: [statistics]
 related_posts:
     -
 list: true
-order: 6
+order: 5
 ---
