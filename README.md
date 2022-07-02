@@ -8,10 +8,9 @@
 
 **Study**
 
-- Bioinformatics Algorithm
 - Biology
 - Computer Science
-- Baekjoon
+- Statistics
 - Rosalind
 
 
