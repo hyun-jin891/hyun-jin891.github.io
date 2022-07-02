@@ -4,7 +4,7 @@ category: Study
 bigtitle: Biology
 slug: biology
 description: >
-    Cell biology, Genetics, Microbiology, Molecular biology, Biochemistry, Animal physiology, Plant, etc
+    I'm sorry
 
 tags: [biology]
 

@@ -8,6 +8,7 @@ use_math: true
 categories:
   - study
   - biology
+published: false
 ---
 ### Simple chemical foundation
 ### * Amino acid

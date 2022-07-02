@@ -8,6 +8,7 @@ use_math: true
 categories:
   - study
   - biology
+published: false
 ---
 ### Influenza virus
 negative ssRNA virus (Baltimore classification: V type)
