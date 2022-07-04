@@ -9,16 +9,7 @@ categories:
   - study
   - computer science
 ---
-### Basic computer science (incomplete)
+### Private repository
+I post my private repository <br>
 
-### Data
-
-### Algorithms
-
-### Compiler
-
-### OS
-
-### DB
-
-### Security
+[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/computer%20science/2022-06-26-basic-computer-science.md)
