@@ -9,7 +9,7 @@ categories:
   - study
   - computer science
 ---
-### Private repository
+### Basic computer science
 I post my private repository <br>
 
 [Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/computer%20science/2022-06-26-basic-computer-science.md)
