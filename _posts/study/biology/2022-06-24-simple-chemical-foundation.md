@@ -8,7 +8,7 @@ use_math: true
 categories:
   - study
   - biology
-published: false
+published: true
 ---
 Private repository where I can only review them<br>
 [Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2022-06-24-simple-chemical-foundation.md)
