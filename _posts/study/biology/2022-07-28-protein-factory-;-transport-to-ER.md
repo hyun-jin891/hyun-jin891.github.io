@@ -16,7 +16,7 @@ Private repository where I can only review them<br>
 ------
 #### 1. Transport To ER
 #### 2. Type Of Transmembrane Protein By Topology (Overview)
-#### 3. N-terminus Signal Sequence
+#### 3. N-terminus Signal Sequence (Type 1)
 #### 4. Stop-transfer Anchor Sequence (Type 1)
 #### 5. Signal-anchor Sequence (Type 2 & Type 3)
 #### 6. Tail-anchored Protein
