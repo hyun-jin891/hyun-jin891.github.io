@@ -2,7 +2,7 @@
 layout: post
 title: Membrane Protein
 description: >
-  Molecular Cell Biology Lodish
+  Molecular Cell Biology Lodish (reference)
 tags: [membrane protein]
 use_math: true
 categories:

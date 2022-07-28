@@ -2,7 +2,7 @@
 layout: post
 title: Biomembrane
 description: >
-  Molecular Cell Biology Lodish
+  Molecular Cell Biology Lodish (reference)
 tags: [biomembrane]
 use_math: true
 categories:

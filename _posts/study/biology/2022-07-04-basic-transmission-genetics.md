@@ -2,7 +2,7 @@
 layout: post
 title: Basic Transmission Genetics
 description: >
-  Genetics Robert J. Brooker
+  Genetics Robert J. Brooker (reference)
 tags: [basic transmission genetics]
 use_math: true
 categories:

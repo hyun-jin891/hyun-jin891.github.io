@@ -2,7 +2,7 @@
 layout: post
 title: Transmembrane Transport
 description: >
-  Molecular Cell Biology Lodish
+  Molecular Cell Biology Lodish (reference)
 tags: [transport]
 use_math: true
 categories:

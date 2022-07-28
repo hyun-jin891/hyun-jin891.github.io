@@ -2,7 +2,7 @@
 layout: post
 title: Protein factory ; transport to ER
 description: >
-  Molecular Cell Biology Lodish
+  Molecular Cell Biology Lodish (reference)
 tags: [protein factory]
 use_math: true
 categories:
