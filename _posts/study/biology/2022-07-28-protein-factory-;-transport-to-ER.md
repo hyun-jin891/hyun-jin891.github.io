@@ -10,20 +10,15 @@ categories:
   - biology
 ---
 Private repository where I can only review them<br>
-[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2022-07-04-biomembrane.md)
+[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2022-07-28-protein-factory-transport-to-ER.md)
 
 ## Contents
 ------
-#### 1. Bilayer structure
-#### 2. Direction of membrane face
-#### 3. Three kinds of lipid for membrane
-#### 4. Phosphoglyceride
-#### 5. Synthesis of phosphoglyceride
-#### 6. Sphingolipid
-#### 7. Synthesis of sphingolipid
-#### 8. Sterol
-#### 9. Synthesis of cholesterol
-#### 10. Fluidity of membrane
-#### 11. Distribution of lipid
-#### 12. Clustering of lipid
+#### 1. Transport To ER
+#### 2. Type Of Transmembrane Protein By    Transporting (Overview)
+#### 3. N-terminus Signal Sequence
+#### 4. Stop-transfer Anchor Sequence (Type 1)
+#### 5. Signal-anchor Sequence (Type 2 & Type 3)
+#### 6. Tail-anchored Protein
+#### 7. GPI-anchored Protein
 -----
