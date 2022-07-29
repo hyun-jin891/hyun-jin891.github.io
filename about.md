@@ -5,7 +5,7 @@ description:
   Bioinformatics는 Biology, Computer science, Statistics의 융합 분야로 생물학 정보에 전산학적인 기술이 더해진 것을 의미한다.
   인간이 처리하기 힘든 복잡한 생물학적 데이터를 컴퓨터를 이용하여 더욱 빠르게 분석할 수 있도록 하는 학문이며 주로 유전학이나 유전체학, DNA 염기서열에 관련된 분석, 분자 구조 분석 등에 활용되고 있다.            - Incodom
 
-  
+
 menu: true
 order: 0
 categories:
@@ -17,7 +17,7 @@ categories:
 
 ## Education
 
-* 2021-present B.S. in Systems Biology, Yonsei University
+* 2021-present B.S. in Systems Biology and Computer Science, Yonsei University
 
 ## Career History
 
