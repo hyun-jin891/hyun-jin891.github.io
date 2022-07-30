@@ -9,7 +9,9 @@ categories:
   - study
   - computer science
 ---
-## Knapsack problem
+## 0-1 Knapsack problem
+
+## Knapsack Problem
 
 * Condition
   * There is a bag (allowing maximum weight W<sub>max</sub>)
