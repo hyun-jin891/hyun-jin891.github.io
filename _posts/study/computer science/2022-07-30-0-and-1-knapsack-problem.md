@@ -25,7 +25,7 @@ categories:
 * can be solved by DP
 
 ## DP table
-![그림1](/assets/img/72.PNG?raw=true){: width="600" height="600"}<br>
+![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/72.PNG?raw=true){: width="600" height="600"}<br>
 
 * Let specific location of row == i
 * Let specific location of column == j
