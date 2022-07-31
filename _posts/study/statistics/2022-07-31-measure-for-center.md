@@ -16,7 +16,7 @@ categories:
 
 ## Mean
 * Population mean : calculation of mean in population<br>
-![그림1](/assets/img/73.PNG?raw=true){: width="600" height="600"}<br>
+![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/73.PNG?raw=true){: width="600" height="600"}<br>
 
 ~~~
 Example
@@ -27,7 +27,7 @@ Example
 ~~~
 
 * Sample mean : calculation of mean in a specific sample<br>
-![그림2](/assets/img/74.PNG?raw=true){: width="600" height="600"}<br>
+![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/74.PNG?raw=true){: width="600" height="600"}<br>
 
 ~~~
 Example
@@ -95,10 +95,10 @@ Example
 ## Estimation For Distribution
 * **Mean is sensitive to outlier**
 * Symmetric<br>
-![그림3](/assets/img/75.PNG?raw=true){: width="600" height="600"}<br>
+![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/75.PNG?raw=true){: width="600" height="600"}<br>
 
 * Skewed to the right<br>
-![그림4](/assets/img/76.PNG?raw=true){: width="600" height="600"}<br>
+![그림4](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/76.PNG?raw=true){: width="600" height="600"}<br>
 
 * Skewed to the left<br>
-![그림5](/assets/img/77.PNG?raw=true){: width="600" height="600"}<br>
+![그림5](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/77.PNG?raw=true){: width="600" height="600"}<br>
