@@ -10,7 +10,7 @@ categories:
   - biology
 ---
 Private repository where I can only review them<br>
-[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2022-07-28-protein-factory-transport-to-ER.md)
+[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2022-08-01-protein-factory-%3B-in-ER.md)
 
 ## Contents
 ------
