@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Protein factory ; transport to ER
+title: Protein factory ; transport to Golgi
 description: >
   Molecular Cell Biology Lodish, Cell Biology Course in Yonsei (reference)
 tags: [protein factory]
