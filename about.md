@@ -17,11 +17,43 @@ categories:
 
 ## Education
 
-* 2021-present B.S. in Systems Biology and Computer Science, Yonsei University
+* 2021-present B.S. in Systems Biology (major) and Computer Science (double major), Yonsei University
+
+## Related Courses
+* SW Programming (B.S. 1-1)
+* Genetics (B.S. 2-1)
+* Cell Biology 1 (B.S. 2-1)
+* Microbiology (B.S. 2-1)
+* Object-oriented Programming (B.S. 2-1)
+* Introduction To Statistics (B.S. 2-1)
+* Molecular Biology (planning)
+* Molecular Biochemistry (planning)
+* Animal Physiology (planning)
+* Experiments in Systems Biology I (planning)
+* Organic Chemistry I (planning)
+* Organic Chemistry II (planning)
+* Data Structure (planning)
+* Statistical Method (planning)
+* Plant Molecular Physiology (planning)
+* Immunology (planning)
+* Experiments in Systems Biology II (planning)
+* Operating System (planning)
+* Computer Architecture (planning)
+* Computer Graphics (planning)
+* Developmental Biology (planning)
+* Molecular Cancer Biology (planning)
+* System Programming (planning)
+* Discrete Structure (planning)
+* Bioinformatics (planning)
+* Methods in Molecular Biology (planning)
+* Information Security (planning)
+* Machine Learning (planning)
+* Big Data (planning)
+* Computer Vision (planning)
+* Analysis Of Algorithm (planning)
+* Computer Network (planning)
 
 ## Career History
-
-## Project
 
 ## Portfolio
 [portfolio]
