@@ -20,12 +20,16 @@ categories:
 * 2021-present B.S. in Systems Biology (major) and Computer Science (double major), Yonsei University
 
 ## Related Courses
+* General Biology I (B.S. 1-1)
 * SW Programming (B.S. 1-1)
+* General Biology II (B.S. 1-2)
+* Computer System And Physical Computing (B.S. 1-2)
 * Genetics (B.S. 2-1)
 * Cell Biology 1 (B.S. 2-1)
 * Microbiology (B.S. 2-1)
 * Object-oriented Programming (B.S. 2-1)
 * Introduction To Statistics (B.S. 2-1)
+* Introduction To Computer Science (B.S. summer)
 * Molecular Biology (planning)
 * Molecular Biochemistry (planning)
 * Animal Physiology (planning)
