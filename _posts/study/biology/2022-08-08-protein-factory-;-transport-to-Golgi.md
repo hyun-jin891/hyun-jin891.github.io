@@ -17,7 +17,7 @@ This is the private repository where I can only review my notes<br>
 ------
 #### 1. Golgi
 #### 2. Direction Of Pathway
-#### 3. Vesicle for ER → Golgi
-#### 4. Vesicle for Golgi → ER
+#### 3. Vesicle for ER → cis-Golgi Network
+#### 4. Vesicle for Retrograde Pathway (trans-Golgi Network → ER)
 #### 5. Sorting Signals
 -----
