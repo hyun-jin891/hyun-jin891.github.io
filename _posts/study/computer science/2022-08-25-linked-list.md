@@ -10,7 +10,7 @@ categories:
   - computer science
 ---
 ### Linked List
-![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/114.PNG?raw=true){: width="600" height="600"}<br>
+![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/114.PNG?raw=true){: width="1000" height="300"}<br>
 * data
 * link == address for next node
 * head == current node
@@ -170,7 +170,7 @@ public void addStart(T item) {
   head = new Node<T>(item, head);
 }
 ~~~
-![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/115.PNG?raw=true){: width="600" height="600"}<br>
+![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/115.PNG?raw=true){: width="1000" height="300"}<br>
 
 ----
 
@@ -208,7 +208,7 @@ public boolean deleteStart() {
     return false;
 }
 ~~~
-![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/116.PNG?raw=true){: width="600" height="600"}<br>
+![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/116.PNG?raw=true){: width="1000" height="300"}<br>
 
 Deleted data3 : automatically collected by automatic garbage collection of java<br>
 
