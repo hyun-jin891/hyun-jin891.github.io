@@ -8,7 +8,6 @@ use_math: true
 categories:
   - study
   - biology
-published: false
 ---
 This posting is my note that I study the contents and write them by my style <br>
 This is the private repository where I can only review my notes<br>
