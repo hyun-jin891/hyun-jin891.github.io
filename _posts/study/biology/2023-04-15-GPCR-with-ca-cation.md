@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GPCR with calcium cation
+title: GPCR with Ca cation
 description: >
   Molecular Cell Biology Lodish (reference), Cell Biology Course in Yonsei (reference)
 tags: [cell signaling]
@@ -11,15 +11,13 @@ categories:
 ---
 This posting is my note that I study the contents and write them by my style <br>
 This is the private repository where I can only review my notes<br>
-[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2022-10-14-GPCR-with-adenylyl-cyclase.md)
+[Repository](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/_posts/study/biology/2023-04-15-GPCR-with-Ca-cation.md)
 
 ## Contents
 ------
-#### 1. Adenylyl Cyclase
-#### 2. PKA
-#### 3. Glycogen metabolism
-#### 4. CREB
-#### 5. AKAP
-#### 6. Termination
-#### 7. Desensitization
+#### 1. Rise in Ca<sup>2+</sup>
+#### 2. Basic Pathway
+#### 3. Movement of Ca<sup>2+</sup>
+#### 4. Ca<sup>2+</sup>-Calmodulin Complex
+#### 5. Glycogenolysis
 -----
