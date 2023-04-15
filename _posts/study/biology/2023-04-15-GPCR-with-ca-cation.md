@@ -11,7 +11,7 @@ categories:
 ---
 This posting is my note that I study the contents and write them by my style <br>
 This is the private repository where I can only review my notes<br>
-[Repository](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/_posts/study/biology/2023-04-15-GPCR-with-Ca-cation.md)
+[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2023-04-15-GPCR-with-Ca-cation.md)
 
 ## Contents
 ------
