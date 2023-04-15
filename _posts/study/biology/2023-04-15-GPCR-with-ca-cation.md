@@ -18,6 +18,6 @@ This is the private repository where I can only review my notes<br>
 #### 1. Rise in Ca<sup>2+</sup>
 #### 2. Basic Pathway
 #### 3. Movement of Ca<sup>2+</sup>
-#### 4. Ca<sup>2+</sup>-Calmodulin Complex
+#### 4. Ca<sup>2+</sup>- Calmodulin Complex
 #### 5. Glycogenolysis
 -----
