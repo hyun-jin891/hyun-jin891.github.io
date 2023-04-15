@@ -87,8 +87,8 @@ published: false
 
 ## Extra Knowledge
 * PLC (Phospholipase C)
-  * PLC<sub>β : Ca<sup>2+</sup> signal pathway with GPCR
-  * PLC<sub>γ : Ca<sup>2+</sup> signal pathway with RTK/Cytokine receptor
+  * PLC<sub>β</sub> : Ca<sup>2+</sup> signal pathway with GPCR
+  * PLC<sub>γ</sub> : Ca<sup>2+</sup> signal pathway with RTK/Cytokine receptor
 * IP3-gated Ca<sup>2+</sup> channel has 4 domains for recognizing IP3
 * Calcium Spike
   * Cytosolic level of Ca<sup>2+</sup> increases → IP3-gated Ca<sup>2+</sup> channel affinity for IP3 ↓
