@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTK
+title: Receptor Associated with Tyrosine Kinase
 description: >
   Molecular Cell Biology Lodish (reference), Cell Biology Course in Yonsei (reference)
 tags: [cell signaling]
@@ -11,13 +11,13 @@ categories:
 ---
 This posting is my note that I study the contents and write them by my style <br>
 This is the private repository where I can only review my notes<br>
-[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2023-04-23-RTK.md)
+[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2023-05-06-receptor-associated-with-tyrosine-kinase.md)
 
 ## Contents
 ------
-#### 1. Receptor Activating Tyrosine Kinase
-#### 2. Ligands of RTK
-#### 3. Basic Pathway
-#### 4. HER
-#### 5. Desensitization of HER1
+#### 1. Receptor Associated with Tyrosine Kinase
+#### 2. EPO Receptor
+#### 3. SH2 Domain
+#### 4. JAK-STAT Pathway
+#### 5. Desensitization of EPOR
 -----
