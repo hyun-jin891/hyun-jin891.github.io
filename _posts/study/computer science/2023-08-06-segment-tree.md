@@ -31,6 +31,7 @@ categories:
 
 ### Initialization
 * sum<br>
+
 ~~~python
 tree = [0] * (N * 4)
 
