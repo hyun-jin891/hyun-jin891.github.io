@@ -710,22 +710,23 @@ plt.show()
 <br>
 
 ### Result
-* ER Chaperone : 100개, Unfolded Proteins : 200개, Other Proteins : 70개, KDEL Receptors : 20개, Other Receptors : 10개로 입력하고 실행하였다. <br>
-
-![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/144.PNG?raw=true){: width="1500" height="400"}<br>
+ER Chaperone : 100개, Unfolded Proteins : 200개, Other Proteins : 70개, KDEL Receptors : 20개, Other Receptors : 10개로 입력하고 실행하였다. <br>
 
 * Other Receptors가 other proteins을 인지하여 발생한 vesicles이 Golgi로 이동하고 있는 모습이다.<br>
 
-![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/145.PNG?raw=true){: width="1500" height="400"}<br>
+![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/144.PNG?raw=true){: width="1500" height="400"}<br>
+
+
+![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/146.PNG?raw=true){: width="1500" height="400"}<br>
 
 * (a, b) : a는 ER에서의 unfolded protein 개수, b는 Golgi에서의 unfolded protein 개수이다.
 * 처음 초기화했을 때 a가 b보다 훨씬 많았음에도 ER에는 Chaperone이 많기 때문에 a의 값은 금방 줄어드는 것을 확인할 수 있다.
 * b의 값은 혹여나 vesicle에 우연히 담겨져 Golgi로 이동했을 가능성을 고려한 것이다.
 * b의 값이 감소하고 있는 것을 통해 Other Receptors에 의해 만들어진 vesicle 안에 우연히 담겨져 Golgi로 이동한 ER Chaperone이 Golgi에 있는 unfolded protein을 제거하고 있는 것을 확인할 수 있다.<br>
 
-![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/146.PNG?raw=true){: width="1500" height="400"}<br>
-
 * KDEL Receptors가 ER Chaperones을 인지하여 발생한 vesicles이 ER로 이동하고 있는 모습이다.<br>
+
+![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/145.PNG?raw=true){: width="1500" height="400"}<br>
 
 
 ### Conclusion
