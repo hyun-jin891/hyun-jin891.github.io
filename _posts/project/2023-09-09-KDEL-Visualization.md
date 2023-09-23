@@ -714,10 +714,10 @@ ER Chaperone : 100개, Unfolded Proteins : 200개, Other Proteins : 70개, KDEL 
 
 * Other Receptors가 other proteins을 인지하여 발생한 vesicles이 Golgi로 이동하고 있는 모습이다.<br>
 
-![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/144.PNG?raw=true){: width="1500" height="400"}<br>
+![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/144.PNG?raw=true){: width="1300" height="700"}<br>
 
 
-![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/146.PNG?raw=true){: width="1500" height="400"}<br>
+![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/146.PNG?raw=true){: width="1000" height="700"}<br>
 
 * (a, b) : a는 ER에서의 unfolded protein 개수, b는 Golgi에서의 unfolded protein 개수이다.
 * 처음 초기화했을 때 a가 b보다 훨씬 많았음에도 ER에는 Chaperone이 많기 때문에 a의 값은 금방 줄어드는 것을 확인할 수 있다.
@@ -726,7 +726,7 @@ ER Chaperone : 100개, Unfolded Proteins : 200개, Other Proteins : 70개, KDEL 
 
 * KDEL Receptors가 ER Chaperones을 인지하여 발생한 vesicles이 ER로 이동하고 있는 모습이다.<br>
 
-![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/145.PNG?raw=true){: width="1500" height="400"}<br>
+![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/145.PNG?raw=true){: width="1300" height="700"}<br>
 
 
 ### Conclusion
