@@ -21,7 +21,7 @@ categories:
 * It efficiently decreases the searching path in comparison to Brute-force algorithm
 
 ### BCR
-* Example
+* Example<br>
 A C G G T C A T G C C A (Suggested Seq)<br>
 A T C A G (Pattern)<br>
 
@@ -29,7 +29,7 @@ A T C A G (Pattern)<br>
 * We should focus on a symbol (T) in suggested seq which is involved in that mismatch
 * We should find the location of the symbol in pattern. (If there are the symbols more than one, we choose one which is the closest to the end of the pattern)
   * Consequently, it is possible to move backward (that is, we need more rule (: GSR) for efficently finding the searching path)
-* We move the pattern
+* We move the pattern<br>
 A C G G T C A T G C C A<br>
 ...........A T C A G<br>
 * If the symbol is not in pattern, we just move the pattern by the length of pattern
@@ -71,38 +71,73 @@ A C G G T C A T G C C A<br>
   * shift[n] : Assume the good suffix is from n (index) to the end of pattern → list value = the number needed for pattern shifting
     * **index n-1 is absolutely mismatch** (definition of good suffix)
     * we don't know whether 1 ~ n-2 is mismatch or not
+  * For calculating shift[], we should make the list (bpos[])
+    * bpos[n] : Assume there is a string from n (index) to the end of pattern → list value = start index of suffix which is equal to prefix
+    * Example : ABABA → bpos = 2 (prefix = suffix = ABA)
 
+### preProcessingBCR
 
+~~~python
+def preProcessingBCR(pattern):
+  BCR_Dictionary = {}
+  Nucleotide = ['A', 'G', 'C', 'T']
 
-### Built on Poole
+  for nt in Nucleotide:
+    BCR_Dictionary[nt] = -1
 
-Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Hyde here) includes the following:
+  for nt in range(len(pattern)):
+    BCR_Dictionary[pattern[nt]] = nt
+~~~
+<br>
 
-* Complete Jekyll setup included (layouts, config, [404]({{ '/404' | relative_url }}), [RSS feed]({{'/feed.xml' | relative_url }}){:.external}, posts, and [example page]({{ '/about/' | relative_url }}))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
+### preProcessingGSR
 
-### Hyde features
+~~~python
+def preProcessingGSR(pattern):
+  bpos = [0] * (len(pattern) + 1)
+  shift = [0] * (len(pattern) + 1)
 
-In addition to the features of Poole, Hyde adds the following:
+  i = len(pattern)
+  j = len(pattern) + 1
+  bpos[i] = j
 
-* Sidebar includes support for textual modules and a dynamically generated navigation with active link support
-* Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes
-* [Eight optional color schemes](https://github.com/poole/hyde#themes), available via `<body>` classes
+  while i > 0:
+    while j <= len(pattern) and pattern[i - 1] != pattern[j - 1]:
+      if shift[j] == 0:
+        shift[j] = j - i
+      j = bpos[j]
 
-[Head to the readme](https://github.com/poole/hyde#readme) to learn more.
+    i -= 1
+    j -= 1
+    bpos[i] = j
 
-### Browser support
+  i = bpos[0]
+  for j in range(len(pattern)):
+    if shift[j] == 0:
+      shift[j] = i
+    if j == i:
+      i = bpos[i]
+~~~
+<br>
 
-Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
+### Implementation for Boyer-Moore
 
-### Download
+~~~python
+def BoyerMoore(pattern, seq, BCR_Dictionary, shift):
+  i = 0
+  result = []
 
-Hyde is developed on and hosted with GitHub. Head to the [GitHub repository](https://github.com/poole/hyde) for downloads, bug reports, and features requests.
+  while i <= len(seq) - len(pattern):
+    j = len(pattern) - 1
 
-Thanks!
+    while j >= 0 and pattern[j] == seq[i + j]:
+      j -= 1
 
-[docs]: ../docs/7.5.2/index.md
+    if j < 0:
+      result.append(i)
+      i += shift[0]
+    else:
+      i += max(shift[j + 1], j - BCR_Dictionary[seq[i + j]])
+
+  return result
+~~~
