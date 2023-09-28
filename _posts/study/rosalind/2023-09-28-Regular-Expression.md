@@ -37,8 +37,11 @@ categories:
   * Ex) GCA(TG){3} → GCATGTGTG
 * chr{n, m} : chr * α (n <= α <= m)
   * Ex) AC{1, 2}G → ACG, ACCG
-* "seq1 | seq2" : seq1 or seq2
-  * Ex) "ATT | A(CG){2}" → ATT, ACGCG
+* seq1 or seq2<br>
+~~~python
+"ATT | A(CG){2}" # → ATT, ACGCG
+~~~
+<br>
 * M[ ^_ ]*_ : coding amino acid sequence (_ : stop codon)
 
 ### Module for RE
