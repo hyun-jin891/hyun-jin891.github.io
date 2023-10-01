@@ -14,7 +14,7 @@ categories:
 * There are some sequences which have the common motif
 * However, we don't know what the motif is (we know the size)
 * We should identify the indexes representing the start point of motif in each suggested sequence (It gonna be saved as index_list)
-* After defining the score representing how much the list is correct, we calculate and select the maximum score
+* After defining the score representing how much the list is correct, we calculate and select the maximum score<br>
 
 ![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/147.png?raw=true){: width="600" height="600"}
 
@@ -22,16 +22,16 @@ categories:
 
 ~~~python
 def frequencyMatrix(index_list, motif_size, seq_list, alphabet_list = ['A', 'G', 'T', 'C']):
-  res = [[0 for i in range(motif_size)] for i in range(4)]
+  result = [[0 for i in range(motif_size)] for i in range(4)]
 
   for i in range(len(index_list)):
     subseq = seq_list[i][index_list[i] : index_list[i] + motif_size]
     for j in range(motif_size):    
       for k in range(len(alphabet_list)):
         if subseq[j] == alphabet_list[k]:
-          res[k][j] += 1
+          result[k][j] += 1
 
-  return res
+  return result
 
 def score(index_list, motif_size, seq_list):
   matrix = frequencyMatrix(index_list, motif_size, seq_list)
@@ -43,6 +43,7 @@ def score(index_list, motif_size, seq_list):
       if maxFrequency < matrix[j][i]:
         maxFrequency = matrix[j][i]
     score += maxFrequency
+    maxFrequency = 0
 
   return score
 ~~~
@@ -53,10 +54,12 @@ def score(index_list, motif_size, seq_list):
   * [0, 0, ... , 0, 0] → [0, 0, ... , 0, 1] → [0, 0, ... , 0, 2] → ... → [0, 0, ... , 0, seq_size - motif_size] → [0, 0, ... , 1, 0] → ... → [0, 0, ... , 1, seq_size - motif_size] → .....
   * Choose maximum score
 * Accurate but it is not efficient
+
 <br>
+
 ~~~python
 def nextCase(index_list, seq_list, motif_size):
-  res = [0 for i in range(len(index_list))]
+  result = [0 for i in range(len(index_list))]
   pos = len(index_list) - 1
 
   while pos >= 0 and index_list[pos] == len(seq_list[pos]) - motif_size:
@@ -66,18 +69,18 @@ def nextCase(index_list, seq_list, motif_size):
     return None
 
   for i in range(pos):
-    res[i] = index_list[i]
+    result[i] = index_list[i]
 
-  res[pos] = index_list[pos] + 1
+  result[pos] = index_list[pos] + 1
 
   for i in range(pos + 1, len(seq_list)):
-    res[i] = 0
+    result[i] = 0
 
-  return res
+  return result
 
 def BruteForce(seq_list, motif_size):
   result = []
-  index_list = [0 for i range(len(seq_list))]
+  index_list = [0 for i in range(len(seq_list))]
   maxScore = -1
 
   while index_list != None:
@@ -86,11 +89,13 @@ def BruteForce(seq_list, motif_size):
       maxScore = currentScore
       result = index_list
 
-    index_list = nextCase(index_list, seq_size, motif_size)
+    index_list = nextCase(index_list, seq_list, motif_size)
 
-  return index_list
+  return result
 ~~~
+
 <br>
+
 * nextCase : Change the index_list which gonna be inspected
   * Start from the last element of index_list
   * If target reaches seq_size - motif_size, target gonna be moved to current index - 1 (current index ~ end : start from 0)
@@ -125,7 +130,7 @@ def UseByPass(seq_list, motif_size):
       currentScore = score(index_list, motif_size, seq_list)
       if currentScore > maxScore:
         maxScore = currentScore
-        res = index_list
+        result = index_list
       index_list = noPass(index_list, motif_size, seq_list)
 
   return result
@@ -139,7 +144,7 @@ def noPass(index_list, motif_size, seq_list):
   else:
     pos = len(index_list) - 1
 
-    while pos >= 0 and index_list[pos] == len(seq_list) - motif_size:
+    while pos >= 0 and index_list[pos] == len(seq_list[pos]) - motif_size:
       pos -= 1
 
     if pos < 0:
@@ -155,7 +160,7 @@ def byPass(index_list, motif_size, seq_list):
   pos = len(index_list) - 1
   result = []
 
-  while pos >= 0 and index_list[pos] == len(seq_list) - motif_size:
+  while pos >= 0 and index_list[pos] == len(seq_list[pos]) - motif_size:
     pos -= 1
 
   if pos < 0:
@@ -176,3 +181,41 @@ def byPass(index_list, motif_size, seq_list):
 * Logic
   * We just calculate the maximum score only between first element and second element from index_list
   * After that, we focus on 3 ~ end **sequentially** and update the maximum score
+* We should repeat the calculation with changing both first element and second element for the accurate result
+
+<br>
+
+~~~python
+def Heuristic(motif_size, seq_list):
+  result = [0 for i in range(len(seq_list))]
+  tempoRes = [0, 0]
+  maxScore = -1
+
+  for i in range(len(seq_list[0]) - motif_size):
+    for j in range(len(seq_list[1]) - motif_size):
+      tempoRes[0] = i
+      tempoRes[1] = j
+      currentScore = score(tempoRes, motif_size, seq_list)
+
+      if currentScore > maxScore:
+        maxScore = currentScore
+        result[0] = i
+        result[1] = j
+
+  for i in range(2, len(seq_list)):
+    tempoRes = [0] * (i + 1)
+    for j in range(len(tempoRes)):
+      tempoRes[j] = result[j]
+
+    maxScore = -1
+
+    for k in range(len(seq_list[i]) - motif_size):
+      tempoRes[i] = k
+      currentScore = score(tempoRes, motif_size, seq_list)
+
+      if currentScore > maxScore:
+        maxScore = currentScore
+        result[i] = k
+
+  return result
+~~~
