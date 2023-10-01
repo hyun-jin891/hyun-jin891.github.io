@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Identify Motif
+title: Identify Deterministic Motif
 description: >
   For identifying motif from the suggested sequences
 tags: [Motifs]
@@ -10,7 +10,7 @@ categories:
   - rosalind
 ---
 
-### Identify Motif
+### Identify Deterministic Motif
 * There are some sequences which have the common motif
 * However, we don't know what the motif is (we know the size)
 * We should identify the indexes representing the start point of motif in each suggested sequence (It gonna be saved as index_list)
