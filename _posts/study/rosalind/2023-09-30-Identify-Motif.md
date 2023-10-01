@@ -16,7 +16,7 @@ categories:
 * We should identify the indexes representing the start point of motif in each suggested sequence (It gonna be saved as index_list)
 * After defining the score representing how much the list is correct, we calculate and select the maximum score<br>
 
-![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/147.png?raw=true){: width="600" height="600"}
+![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/147.PNG?raw=true){: width="600" height="600"}<br>
 
 
 
