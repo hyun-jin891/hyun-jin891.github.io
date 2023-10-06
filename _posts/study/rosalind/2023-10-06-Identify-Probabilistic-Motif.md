@@ -2,7 +2,8 @@
 layout: post
 title: Identify Probabilistic Motif
 description: >
-  For identifying motif from the suggested sequences
+  For identifying motif from the suggested sequences<br>
+  Bioinformatics Algorithms (reference)
 tags: [Motifs]
 
 categories:
