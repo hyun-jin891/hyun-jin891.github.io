@@ -36,6 +36,7 @@ categories:
   * origin source changes (X) → just return
   * "inplace = True" cannat be used
 <br>
+
 ~~~python
 import pandas as pd
 
