@@ -22,11 +22,13 @@ df1 = pd.DataFrame({"math" : [90, 74, 65], "biology" : [100, 60, 97], "chemistry
 df2 = pd.DataFrame([[90, 100, 85], [74, 60, 100], [65, 97, 78]], index = ["Samoh", "Rivera", "Cho"], columns = ["math", "biology", "chemistry"])
 ~~~
 <br>
-In df2, [90, 100, 85] is a record<br>
-A person name : a single index<br>
-A subject name : a single columns<br>
+* In df2, [90, 100, 85] is a record<br>
+* A person name : a single index<br>
+* A subject name : a single columns<br>
+* We can make dataframe like this way
+  * df = pd.DataFrame([Series1, Series2, ...], index = ["index0", "index1", ...])
 
-## Change Index & Columns
+### Change Index & Columns
 * print(df.index) : check the index of df
 * print(df.columns) : check the columns' names
 * change the names of all of things in index & columns
@@ -39,7 +41,7 @@ A subject name : a single columns<br>
   * **df.rename(index={originI0 : newI0, originI1 : newI1, originI2 : newI2, ...})**
   * **df.rename(columns={originC0 : newC0, originC1 : newC1, ...})**
 
-## Deletion of Rows & Columns
+### Deletion of Rows & Columns
 * Use "drop"
   * origin source changes (X) → just return
   * If we wanna change the origin dataframe, we insert "inplace=True" as a parameter
@@ -48,7 +50,7 @@ A subject name : a single columns<br>
 * **df.drop('column0', axis=1)** (remove a column whose name is column0)
 * **df.drop(['column0', 'column3'], axis=1)** (remove 2 columns)
 
-## Choose Rows
+### Choose Rows
 * Use "loc" (index label) & "iloc" (integer index)
 * Choose a single row
   * **df.loc['index0']** (return Series corresponding to index0)
@@ -63,14 +65,14 @@ A subject name : a single columns<br>
     * **df.iloc[0 : 4 : 2]** (return dataframe corresponding to first, third index)
     * **df.iloc[ : : -1]** (return dataframe corresponding to last, last - 1, last - 2, ..., first index)
 
-## Choose Columns
+### Choose Columns
 * Choose a single column
   * **df['column1']** (return Series corresponding to column1)
   * **df.column2** (return Series corresponding to column2)
 * Choose multiple columns
   * **df[**['column1', 'column2', 'column5']**]** (return dataframe corresponding to column1, column2, and column5)
 
-## Choose Element
+### Choose Element
 * **df.(i)loc[row information, column information]**
   * Example
     * **df.iloc[1, 2]** (return a single element corresponding to second index and third column)
@@ -83,25 +85,29 @@ A subject name : a single columns<br>
     * **df.loc[:, **['column1', 'column3']**]** (return dataframe corresponding to column1, column3)
 * **df.(i)loc[**row information**][**column information**]**
 
-## Add Row
+### Add Row
 * New row has only one value as element
   * **df.loc["index5"] = 0** (add a row named as index5 and this row has only 0 as element)
 * New row has various values as element
   * **df.loc["index5"] = [2, 4, 5, 7]** (Series is also possible) (add a row named as index5 and [2, 4, 5, 7] is a record)
 
-## Add Column
+### Add Column
 * New column has only one value as element
   * **df["column5"] = 0** (add a column named as column5 and this column has only 0 as element)
 * New row has various values as element
   * **df["column5"] = [2, 4, 5, 7]** (Series is also possible) (add a column named as column5)
 
-## Change Element
+### Change Element
 * **(Choose parts that we wanna change) = newValue**
   * Example
     * **df.iloc[1, 2] = 50** (Change the original value located on second index, thrid column to 50)
     * **df.loc['index1', **['column2', 'column4']**] = [40, 60]** (Change the original values located on (second index, column2), (second index, column4) to 40 and 60)
 
-## Transpose
+### Transpose
 * row → column, column → row
 * **df.transpose()**
 * **df.T**
+
+### Head & Tail
+* **df.head(number)** (return dataframe with n rows starting from the first row, default : number == 5)
+* **df.tail(number)** (return dataframe with n rows starting from the last row, default : number == 5)
