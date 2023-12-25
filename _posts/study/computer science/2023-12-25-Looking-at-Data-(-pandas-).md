@@ -131,7 +131,7 @@ categories:
   * **df[**[c1, c2, ...]**].std()**
     * return Series (std of c1, c2, ...)
 * corr (linear correlation coefficient)
-  * |corr| → 1 : linear relationship
+  * abs(corr) → 1 : linear relationship
   * corr < 0 : negative relationship
   * corr > 0 : positive relationship
   * **df.corr()**
