@@ -46,6 +46,7 @@ Rosalind_0808
 ### Biological Background
 * FASTA file
   * [Definition](https://www.incodom.kr/FASTA)
+* "In practice, the GC-content of most eukaryotic genomes hovers around 50%. However, because genomes are so long, we may be able to distinguish species based on very small discrepancies in GC-content; furthermore, most prokaryotes have a GC-content significantly higher than 50%, so that GC-content can be used to quickly differentiate many prokaryotes and eukaryotes by using relatively small DNA samples." - Rosalind (Computing GC Content)
 
 ### My Solution
 <br>
