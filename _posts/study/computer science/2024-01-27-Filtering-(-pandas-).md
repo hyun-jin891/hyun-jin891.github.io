@@ -17,10 +17,22 @@ categories:
 
 ### Boolean Indexing
 * Condition should be expressed by boolean data
-  * ex1. **condition = df['column name'] > 20** : I wanna extract the records whose 'column name' data is bigger than 20
-  * ex2. **condition = df['column name'] == 10** : I wanna extract the records whose 'column name' data is 10
-  * ex3. **condition = (df['column name'] > 10) & (df['column name'] < 20)** : I wanna extract the records whose 'column name' is between 10 and 20
-  * ex4. **condition = (df['column name'] < 10) '|' (df['column name'] > 20)** : I wanna extract the records whose 'column name' is smaller than 10 or bigger than 20
+  * ex1.
+  ~~~
+  condition = df['column name'] > 20 : I wanna extract the records whose 'column name' data is bigger than 20
+  ~~~
+  * ex2.
+  ~~~
+  condition = df['column name'] == 10 : I wanna extract the records whose 'column name' data is 10
+  ~~~
+  * ex3.
+  ~~~
+  condition = (df['column name'] > 10) & (df['column name'] < 20) : I wanna extract the records whose 'column name' is between 10 and 20
+  ~~~
+  * ex4.
+  ~~~
+  condition = (df['column name'] < 10) | (df['column name'] > 20) : I wanna extract the records whose 'column name' is smaller than 10 or bigger than 20
+  ~~~
 * Boolean Indexing
   * **df = df[condition]** or **df = df.loc[condition, :]**
     * extract the records which satisfy the condition and make dataframe
