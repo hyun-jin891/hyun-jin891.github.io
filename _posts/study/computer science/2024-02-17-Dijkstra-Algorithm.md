@@ -18,7 +18,7 @@ categories:
 
 ### Procedure
 Example with suggested graph <br>
-![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/153.PNG?raw=true){: width="600" height="600"}<br>
+![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/153.png?raw=true){: width="600" height="600"}<br>
 
 * node 0 ~ 5 with the weight (drawn on the edges)
 * Start with node 0 (visited.append(0))
@@ -26,7 +26,7 @@ Example with suggested graph <br>
 
 <br>
 
-![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/154.PNG?raw=true){: width="600" height="600"}<br>
+![그림2](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/154.png?raw=true){: width="600" height="600"}<br>
 
 * Current node : node 0
 * check the nodes which are directly connected with node 0
@@ -35,7 +35,7 @@ Example with suggested graph <br>
 
 <br>
 
-![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/155.PNG?raw=true){: width="600" height="600"}<br>
+![그림3](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/155.png?raw=true){: width="600" height="600"}<br>
 
 * Next node we want to visit : Except visited node, next node we want to visit has the shortest distance from start node → node 3 (visited.append(3))
 * Current node : node 3
@@ -45,7 +45,7 @@ Example with suggested graph <br>
 
 <br>
 
-![그림4](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/156.PNG?raw=true){: width="600" height="600"}<br>
+![그림4](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/156.png?raw=true){: width="600" height="600"}<br>
 
 * Next node we want to visit : Except visited node, next node we want to visit has the shortest distance from start node → node 1 (visited.append(1))
 * Current node : node 1
@@ -55,7 +55,7 @@ Example with suggested graph <br>
 
 <br>
 
-![그림5](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/157.PNG?raw=true){: width="600" height="600"}<br>
+![그림5](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/157.png?raw=true){: width="600" height="600"}<br>
 
 * Next node we want to visit : Except visited node, next node we want to visit has the shortest distance from start node → node 2 (visited.append(2))
 * Current node : node 2
@@ -65,7 +65,7 @@ Example with suggested graph <br>
 
 <br>
 
-![그림6](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/158.PNG?raw=true){: width="600" height="600"}<br>
+![그림6](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/158.png?raw=true){: width="600" height="600"}<br>
 
 * Next node we want to visit : Except visited node, next node we want to visit has the shortest distance from start node → node 4 (visited.append(4))
 * Current node : node 4
@@ -75,7 +75,7 @@ Example with suggested graph <br>
 
 <br>
 
-![그림7](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/159.PNG?raw=true){: width="600" height="600"}<br>
+![그림7](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/159.png?raw=true){: width="600" height="600"}<br>
 
 * Next node we want to visit : Except visited node, next node we want to visit has the shortest distance from start node → node 5 (visited.append(5))
 * Current node : node 5
@@ -169,14 +169,14 @@ print(distance)
 * Sketch
   * First of all, we make the graph with the special rule
 
-  ![그림8](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/160.PNG?raw=true){: width="600" height="600"}<br>
+  ![그림8](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/160.png?raw=true){: width="600" height="600"}<br>
 
   * Rule : (N x 10 + j) mod K = M
   * Each node is the result from mod K (Consequently, each node < K)
   * Weight (j) : unit digit (일의 자리 수)
   * If we make the graph with this rule, the picture will be satisfied
 
-    ![그림9](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/162.PNG?raw=true){: width="600" height="600"}<br>
+    ![그림9](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/162.png?raw=true){: width="600" height="600"}<br>
 
     * When K = 13, the graph represents the possible path (other nodes are not drawn)
     * From node 0 to node M, the weights will be the value on specific location (digit, 자릿수)
@@ -185,7 +185,7 @@ print(distance)
       * However, we should ignore the path that node 0 moves directly to 0 (That is, the distance should not be 0)
       * We can use Dijkstra algorithm for calculating the answer
   * Why is the picture satisfied?
-    ![그림10](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/161.PNG?raw=true){: width="600" height="600"}<br>
+    ![그림10](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/161.png?raw=true){: width="600" height="600"}<br>
 
     * We should prove (j<sub>1</sub>j<sub>2</sub>j<sub>3</sub>...j<sub>n</sub>) mod K = node M
     * Using mathematical induction with the logic of this picture, we can prove it
