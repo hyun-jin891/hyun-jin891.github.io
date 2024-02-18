@@ -19,6 +19,7 @@ categories:
   * A + B ≡ C + D ≡ A + D ≡ C + B (mod E)
   * A x B ≡ C x D ≡ A x D ≡ C x B (mod E)
   * A - B ≡ C - D ≡ A - D ≡ C - B (mod E)
+    * (object1 - object2) should not be negative
 * Ex
   * (27 x 41 x 66) % 100
     * 27 x 41 = 1107 → 1107 % 100 = **7**
@@ -142,3 +143,67 @@ categories:
 * h<sup>d</sup> ≡ m (mod n) → m = h<sup>d</sup> (mod n) because of m < n
 * Consequently, Y can find m
 * but it is difficult for other users to find what m is because there is still no algorithm to find d only using public key
+
+### Example Problem 1
+* book : 문제 해결을 위한 알고리즘 with 수학, p.275 문제 4.6.2
+
+~~~
+2차원 격자 위의 원점 (0, 0)에 체스의 나이트가 있습니다.
+나이트는 (i, j)에 있을 때, (i + 1, j + 2) 또는 (i + 2, j + 1) 중 하나로 이동
+할 수 있습니다. 나이트를 (X, Y)까지 이동시키는 방법이 몇 가지 있는지 구해 주세요.
+답을 1000000007로 나눈 나머지를 구하는 프로그램을 작성해주세요.
+~~~
+
+  * My solution
+
+  <br>
+
+  ~~~python
+  X, Y = map(int, input().split())
+
+  def division(a, b, M):
+      return (a * pow(b, M - 2, M)) % M
+
+  res = 0
+
+  for i in range(X//2 + 1):
+      if i + 2 * (X - 2 * i) < Y:
+          break
+        elif i + 2 * (X - 2 * i) == Y:
+          a, b = 1, 1
+          for j in range(2, i + X - 2 * i + 1):
+              a = (a * j) % 1000000007
+          for j in range(2, i + 1):
+              b = (b * j) % 1000000007
+          for j in range(2, X - 2 * i + 1):
+              b = (b * j) % 1000000007
+
+          res = division(a, b, 1000000007)
+
+  print(res)
+  ~~~
+
+  <br>
+
+  * ex) X = 5
+    * case 1) ΔX : combination of +1 +1 +1 +1 +1 (+1 : 5번, +2 : 0번) → ΔY : (+1 : 0번, +2 : 5번)
+    * case 2) ΔX : (+1 : 3, +2 : 1) → ΔY : (+1 : 1번, +2 : 3번)
+    * ....
+  * Generalization
+    * Given X
+      * case0) ΔY : (+1 : 0번, +2 : X번)
+      * case1) ΔY : (+1 : 1번, +2 : X-2번)
+      * case2) ΔY : (+1 : 2번, +2 : X-4번)
+      * ....
+      * caseX//2) ΔY : (+1 : **X//2번**, +2 : **2 x (X - 2 x X//2)번**)
+      * If there is a case given Y in case0~X//2, we should calculate it using factorial
+        * If ΔY : (+1 : 2번, +2 : X-4번)
+        * Answer : (2 + X - 4)! / (2! x (X - 4)!)
+  * When we calculate the factorial, it is better to use **"for" instead of recursion**
+* Other solution
+  * If we set the number of moving by (i + 1, j + 2) as **a** and the number of moving by (i + 2, j + 1) as **b**
+  * X = a + 2b & Y = 2a + b
+  * ∴ (a, b) = ((2Y-X)/3, (2X-Y)/3)
+  * If 2Y-X < 0 or 2X-Y < 0 : Answer is 0
+  * If (2Y-X) % 3 != 0 or (2X-Y) % 3 != 0 : Answer is 0
+  * ∴ Answer = (a + b)!/(a! x b!)
