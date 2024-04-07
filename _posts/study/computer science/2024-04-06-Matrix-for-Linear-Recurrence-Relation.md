@@ -177,7 +177,7 @@ print(res[1][0] + res[1][1])
 
 * Sketch
 
-  ![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/163.png?raw=true){: width="600" height="300"}<br>
+  ![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/163.png?raw=true){: width="400" height="800"}<br>
 
   * We should let initial state be 16<sup>th</sup> state
 
