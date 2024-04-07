@@ -47,7 +47,7 @@ N개의 마을이 있고, 마을에는 1부터 N까지의 번호가 붙어 있�
 
 * Sketch
 
-![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/163.png?raw=true){: width="400" height="800"}<br>
+![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/164.png?raw=true){: width="400" height="800"}<br>
 
 * Code
 
