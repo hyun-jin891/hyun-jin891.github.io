@@ -12,10 +12,25 @@ categories:
 ### Linked List
 ![그림1](https://github.com/hyun-jin891/hyun-jin891.github.io/blob/master/assets/img/114.PNG?raw=true){: width="1000" height="300"}<br>
 * data
-* link == address for next node
+* link (pointer) == address for next node
 * head == current node
 
-### Principle With Java Code
+### Linked List vs Array
+* Array
+  * We have to **set the size** before making array (we even use malloc for setting the size with variable. Otherwise, we can only use constant value for setting the size of the array) + After making it, we cannot change the size
+    * Consequently, insertion/deletion with changing the size gonna be hard for it
+  * By simply using the index, we can search the element in it easily
+* Linked List
+  * The size of it is flexible
+    * Consequently, insertion/deletion with changing the size gonna be easy
+  * Searching is harder than array (need linear search)
+
+
+### Principle With Java + C
+* Java
+
+<br>
+
 ~~~java
 class LinkedList<T>{
 	public class Node<T>{
@@ -294,11 +309,163 @@ clear : simply use head (using automatic garbage collection)<br>
 
 ----
 
-### Property
-* **Access** : Sequential Search (O(N)) → inefficient
-* **add or delete to head** : O(1) → efficient
+<br>
 
-### Linked List With Java
+* C
+
+~~~c
+typedef struct node
+{
+    int data;
+    struct node* nextNode;
+}Node;
+
+Node* createNode(int data)
+{
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->data = data;
+    newNode->nextNode = NULL;
+
+    return newNode;
+}
+
+void destroyNode(Node** node)
+{
+    free(*node);
+    *node = NULL;
+}
+~~~
+
+<br>
+
+* node Structure
+  * contains data & pointer for next node
+* createNode
+  * function for creating a single individual node
+  * If we use static assignment and return the address of that node, it will be gone when createNode function finishes
+  * Consequently, we have to use malloc for creating the node
+* destroyNode
+  * Because we create the node with malloc, we have to destroy that node after using it
+
+<br>
+
+~~~c
+void appendNode(Node** head, Node* newNode)
+{
+    if (*head == NULL)
+    {
+        *head = newNode;
+    }
+    else
+    {
+        Node* current = *head;
+        while (current->nextNode != NULL)
+        {
+            current = current->nextNode;
+        }
+
+        current->nextNode = newNode;
+
+    }
+
+}
+~~~
+
+<br>
+
+* appendNode
+  * function for appending the element to linked list
+  * repeat this function -> the result is to make the linked list
+  * If there is no head, the newNode parameter gonna be head
+  * Use **linear search** to get to tail node and set newNode to tail node's nextNode
+
+<br>
+
+~~~c
+void insertNode(Node* current, Node* newNode)
+{
+    newNode->nextNode = current->nextNode;
+    current->nextNode = newNode;
+}
+
+void insertHead(Node** head, Node* newHead)
+{
+    if (*head == NULL)
+    {
+        *head = newHead;
+    }
+
+    newHead->nextNode = *head;
+    *head = newHead;
+
+}
+~~~
+
+<br>
+
+* insertNode
+  * current -> newNode -> current's original nextNode
+* insertHead
+  * newNode -> original head
+
+<br>
+
+~~~c
+void deleteNode(Node* head, Node* targetNode)
+{
+    Node* current = head;
+
+    while (current->nextNode != NULL && current->nextNode != targetNode)
+    {
+        current = current->nextNode;
+    }
+
+    current->nextNode = targetNode->nextNode;
+
+}
+~~~
+
+<br>
+
+* deleteNode
+  * For deleting targetNode, we have to deal with the preNode of targetNode but **we can get to the preNode only by linear search in single linked list**
+  * nextNode of target's preNode has to be target's nextNode
+  * Deleted node has to be into destroyNode
+
+<br>
+
+~~~c
+Node* getNode(Node* head, int index)
+{
+    if (index == 0)
+    {
+        return head;
+    }
+
+    Node* current = head->nextNode;
+
+    while (current->nextNode != NULL && --(index) != 0)
+    {
+        current = current->nextNode;
+    }
+
+    if (current != NULL)
+    {
+        return current;
+    }
+
+}
+
+~~~
+
+<br>
+
+* getNode
+  * Use linear search (inefficient)
+
+
+### Linked List in Java
+* In Java, we can use linked list directly instead of making it
 * import java.util.LinkedList
 
 ~~~java
@@ -337,4 +504,5 @@ other methods : [Linked List](https://www.javatpoint.com/java-linkedlist)
 
 ### Linked List With Python
 * Queue & Deque includes the advantages of linked list
-* If we want to access the elements → simply using list is efficient
+* If we want to access the elements → **simply using list** is efficient
+* Consequently, **list** in python has already designed for efficiently usage
