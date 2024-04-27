@@ -423,6 +423,11 @@ void deleteNode(Node* head, Node* targetNode)
     current->nextNode = targetNode->nextNode;
 
 }
+
+void deleteHead(Node** head)
+{
+  *head = (*head)->nextNode;
+}
 ~~~
 
 <br>
