@@ -150,7 +150,7 @@ void insertNode(Node* current, Node* newNode)
   * We can do linear search with reverse direction
   * improve deleteNode (avoid linear search)
 
-### Circular Linked List
+### Circular Linked List with C
 * Tail node is connected to head node (+ all nodes have preNode)
 * Modify only appendNode and deleteNode function from doubly linked list
 * appendNode
