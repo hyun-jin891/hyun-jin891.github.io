@@ -49,45 +49,9 @@ for i in range(2, int(N ** 0.5)):
 print(flag)
 ~~~
 
-* Example Problem
-  * book : 문제 해결을 위한 알고리즘 with 수학, p.99 문제 3.1.2
-
-<br>
-
-  ~~~
-  자연수 N을 소인수 분해하는 프로그램을 작성해 주세요.<br>
-
-  ex) 286 = 2 x 11 x 13  >>>  answer : 2 11 13
-  ~~~
-
-  * Sketch
-
-  ~~~
-  if N % (1 ~ √N) == 0:
-    N / (1 ~ √N) → repeat until N % (1 ~ √N) != 0
-  ~~~
-
-  <br>
-
-  * Solution
-
-  <br>
-
-  ~~~python
-  N = int(input())
-  res = []
-
-  for i in range(2, int(N ** 0.5) + 1):
-      while (N % i == 0):
-          res.append(i)
-          N /= i
-
-  if N >= 2:
-      res.append(int(N))
-
-
-  print(res)
-  ~~~
+* Example Problem1
+This is the private repository where I can only review my notes<br>
+[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/computer%20science/2024-02-11-Sieve-of-Eratosthenes.md)
 
 ### Use Sieve of Eratosthenes
 * Given 1, 2, 3, ..., N → We should find the number of prime numbers
@@ -122,58 +86,6 @@ for i in range(2, N + 1):
         print(i)
 ~~~
 
-* Example Problem
-  * book : 문제 해결을 위한 알고리즘 with 수학, p.231 문제 4.4.3
-  * It is important to use **N + N/2 + N/3 + ... + 1 ≈ NlnN**
-
-  <br>
-
-  ~~~
-  양의 정수 N이 주어집니다. 정수 x의 양수인 약수 개수를 f(x)라고 할 때,<br>
-  다음 값을 계산하는 프로그램을 작성해주세요. 복잡도는 O(NlogN)이 되게 해주세요.
-
-  (1 x f(1)) + (2 x f(2)) + (3 x f(x)) + .... + (N x f(N))
-
-  ~~~
-
-  <br>
-
-  * Sketch
-
-  <br>
-
-  ~~~
-  N = 5
-
-               1   2   3   4   5
-  1 x integer  1   1   1   1   1   # If number satisfies a row, count += 1
-  2 x integer  1   2   1   2   1
-  3 x integer  1   2   2   2   1
-  4 x integer  1   2   2   3   1
-  5 x integer  1   2   2   3   2
-
-  Consequently, 1 x 1 + 2 x 2 + 3 x 2 + 4 x 3 + 5 x 2 = 33
-  O(5 + 5/2 + 5/3 + ... 1) → O(N + N/2 + N/3 + ... + 1) = O(NlogN)
-  ~~~
-
-  <br>
-
-  * Code
-
-    <br>
-
-    ~~~python
-    N = int(input())
-
-    res = [1] * (N + 1)
-
-    for i in range(2, N + 1):
-        for j in range(i, N + 1, i):
-            res[j] += 1
-
-    sum = 0
-    for i in range(1, N + 1):
-        sum += i * res[i]
-
-    print(sum)
-    ~~~
+* Example Problem2
+This is the private repository where I can only review my notes<br>
+[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/computer%20science/2024-02-11-Sieve-of-Eratosthenes.md)
