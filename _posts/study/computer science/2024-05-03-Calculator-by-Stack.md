@@ -36,7 +36,7 @@ categories:
           * If it is in stack : 3
           * If it is trying to enter stack : 0
         * RIGHT_PARENTHESIS (")")
-          * Until "(" becomes top node, other operand that was top node gets out of the stack and it enters the result
+          * Until "(" becomes top node, other operators that was top node gets out of the stack and it enters the result
           * "(" also gets out of the stack but it won't enter the result
   * 3<sup>rd</sup> : If there are some nodes left in the stack after extracting all tokens, they gonna get out of the stack sequentially and enter the stack
 * **Procedure** for calculating the postfix notation
@@ -170,7 +170,499 @@ unsigned int getNextToken(char* notation, char* currentToken, char* type)
 }
 ~~~
 
+<br>
+
+* Linked List Stack
+
+<br>
+
+~~~c
+typedef struct node
+{
+    char* data;
+    struct node* nextNode;
+} Node;
+
+typedef struct stack
+{
+    Node* list;
+    Node* tail;
+} LinkedListStack;
+
+void createStack(LinkedListStack** stack)
+{
+    *stack = (LinkedListStack*)malloc(sizeof(LinkedListStack));
+    (*stack)->list = NULL;
+    (*stack)->tail = NULL;
+
+}
+
+Node* createNode(char* data)
+{
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->data = (char*)malloc(strlen(data) + 1);
+
+    strcpy(newNode->data, data);
+    newNode->nextNode = NULL;
+
+    return newNode;
+}
+
+int isEmptyStack(LinkedListStack* stack)
+{
+    return (stack->list) == NULL;
+}
+
+void push(LinkedListStack* stack, Node* newNode)
+{
+    if (stack->list == NULL)
+    {
+        stack->list = newNode;
+    }
+    else
+    {
+        stack->tail->nextNode = newNode;
+    }
+    stack->tail = newNode;
+}
+
+Node* pop(LinkedListStack* stack)
+{
+    Node* topNode = stack->tail;
+
+    if (stack->list == stack->tail)
+    {
+        stack->list = NULL;
+        stack->tail = NULL;
+    }
+    else
+    {
+        Node* currentNode = stack->list;
+
+        while (currentNode != NULL && currentNode->nextNode != stack->tail)
+        {
+            currentNode = currentNode->nextNode;
+        }
+
+        currentNode->nextNode = NULL;
+        stack->tail = currentNode;
+    }
+
+    return topNode;
+}
+
+
+
+void destroyNode(Node** node)
+{
+
+    free((*node)->data);
+    (*node)->data = NULL;
+    free(*node);
+    *node = NULL;
+}
+
+void destroyStack(LinkedListStack** stack)
+{
+    while (!isEmptyStack(*stack))
+    {
+        Node* popNode = pop(*stack);
+        destroyNode(&popNode);
+    }
+    free(*stack);
+    *stack = NULL;
+}
+
+
+
+Node* getTop(LinkedListStack* stack)
+{
+    return stack->tail;
+}
+~~~
 
 ### Algorithm for Converting to Postfix Notation
+* getPostfixNotation(char* infixNotation, char* postfixNotation)
+  * infixNotation -> postfixNotation
+* Whole Code
+
+<br>
+
+~~~c
+void getPostfixNotation(char* infixNotation, char* postfixNotation)
+{
+    unsigned int position = 0;
+    unsigned int length = strlen(infixNotation);
+    char Token[32];
+    int Type = -1;
+
+    LinkedListStack* stack;
+
+    createStack(&stack);
+
+    while (position < length)
+    {
+        position += getNextToken(&infixNotation[position], Token, &Type);
+
+        if (Type == OPERAND)
+        {
+            strcat(postfixNotation, Token);
+            strcat(postfixNotation, " ");
+        }
+        else if (Type == RIGHT_PARENTHESIS)
+        {
+            while (!isEmptyStack(stack))
+            {
+                Node* popThing = pop(stack);
+
+                if (popThing->data[0] == LEFT_PARENTHESIS)
+                {
+                    destroyNode(&popThing);
+                    break;
+                }
+                else
+                {
+                    strcat(postfixNotation, popThing->data);
+                    destroyNode(&popThing);
+                }
+            }
+        }
+        else
+        {
+
+            while (!isEmptyStack(stack) && !isPrior(getTop(stack)->data[0], Token[0]))
+            {
+                Node* popThing = pop(stack);
+                if (popThing->data[0] != LEFT_PARENTHESIS)
+                    strcat(postfixNotation, popThing->data);
+                destroyNode(&popThing);
+            }
+
+
+
+            push(stack, createNode(Token));
+
+        }
+    }
+
+    while (!isEmptyStack(stack))
+    {
+        Node* popThing = pop(stack);
+        if (popThing->data[0] != LEFT_PARENTHESIS)
+            strcat(postfixNotation, popThing->data);
+        destroyNode(&popThing);
+    }
+
+    destroyStack(&stack);
+}
+
+~~~
+
+<br>
+
+* Extract one token from infix notation
+  * Through getNextToken function, extract one token from the given infix notation
+  * Besides, we can get the type of token
+  * Position updates for the location of next token
+
+<br>
+
+~~~c
+while (position < length)
+{
+    position += getNextToken(&infixNotation[position], Token, &Type);
+
+    ///
+}
+
+~~~
+
+<br>
+
+* Based on the kind of the token, it needs to process differently
+* Operand : just enter the result
+
+<br>
+
+~~~c
+if (Type == OPERAND)
+  {
+      strcat(postfixNotation, Token);
+      strcat(postfixNotation, " ");
+  }
+~~~
+
+<br>
+
+* RIGHT_PARENTHESIS (")")
+  * Until "(" becomes top node, other operators that was top node gets out of the stack and it enters the result
+  * "(" also gets out of the stack but it won't enter the result
+
+<br>
+
+~~~c
+else if (Type == RIGHT_PARENTHESIS)
+        {
+            while (!isEmptyStack(stack))
+            {
+                Node* popThing = pop(stack);
+
+                if (popThing->data[0] == LEFT_PARENTHESIS)
+                {
+                    destroyNode(&popThing);
+                    break;
+                }
+                else
+                {
+                    strcat(postfixNotation, popThing->data);
+                    destroyNode(&popThing);
+                }
+            }
+        }
+
+~~~
+
+<br>
+
+* Other Operators
+  * It needs to enter stack
+      * If top node's priority <= current operator's priority, top node needs to get out of the stack and it enters the result  (repeat until current operator's priority is smaller than top node's priority)
+      * After this procedure, current operator gonna enter the stack
+    * Priority : As this value bigs, it tends to stay in stack
+      * PLUS, MINUS : 2
+      * MULTIPLICATION, DIVISION : 1
+      * LEFT_PARENTHESIS ("(")
+        * If it is in stack : 3
+        * If it is trying to enter stack : 0
+
+<br>
+
+~~~c
+else
+        {
+
+            while (!isEmptyStack(stack) && !isPrior(getTop(stack)->data[0], Token[0]))
+            {
+                Node* popThing = pop(stack);
+                if (popThing->data[0] != LEFT_PARENTHESIS)
+                    strcat(postfixNotation, popThing->data);
+                destroyNode(&popThing);
+            }
+
+
+
+            push(stack, createNode(Token));
+
+        }
+
+~~~
+
+<br>
+
+* If there are some nodes left in the stack after extracting all tokens, they gonna get out of the stack sequentially and enter the stack
+
+<br>
+
+~~~c
+while (!isEmptyStack(stack))
+    {
+        Node* popThing = pop(stack);
+        if (popThing->data[0] != LEFT_PARENTHESIS)
+            strcat(postfixNotation, popThing->data);
+        destroyNode(&popThing);
+    }
+
+    destroyStack(&stack);
+
+~~~
 
 ### Algorithm for Calculating Postfix Notation
+* calculator(char* postfixNotation)
+  * calculate the postfix notation
+* Whole Code
+
+<br>
+
+~~~c
+double calculator(char* postfixNotation)
+{
+    unsigned int position = 0;
+    int Type = -1;
+    unsigned int length = strlen(postfixNotation);
+    char Token[10];
+    LinkedListStack* stack = NULL;
+    double result;
+
+    createStack(&stack);
+
+    while (position < length)
+    {
+        position += getNextToken(&postfixNotation[position], Token, &Type);
+
+        if (Type == SPACE)
+        {
+            continue;
+        }
+
+        if (Type == OPERAND)
+        {
+            push(stack, createNode(Token));
+        }
+        else
+        {
+            Node* topNode1 = pop(stack);
+            double operand1 = atof(topNode1->data);
+            Node* topNode2 = pop(stack);
+            double operand2 = atof(topNode2->data);
+
+            switch (Type)
+            {
+                case PLUS:
+                    result = operand2 + operand1;
+                    break;
+                case MINUS:
+                    result = operand2 - operand1;
+                    break;
+                case MULTIPLICATION:
+                    result = operand2 * operand1;
+                    break;
+                case DIVISION:
+                    result = operand2 / operand1;
+                    break;
+
+            }
+
+            char charResult[20];
+            gcvt(result, 10, charResult);
+            push(stack, createNode(charResult));
+            destroyNode(&topNode1);
+            destroyNode(&topNode2);
+        }
+    }
+    Node* lastNode = pop(stack);
+    result = atof(lastNode->data);
+    destroyNode(&lastNode);
+    destroyStack(&stack);
+
+    return result;
+
+}
+~~~
+
+<br>
+
+* Extract one token from postfix notation
+  * Through getNextToken function, extract one token from the given postfix notation
+  * Besides, we can get the type of token
+  * Position updates for the location of next token
+
+<br>
+
+~~~c
+while (position < length)
+{
+    position += getNextToken(&postfixNotation[position], Token, &Type);
+}
+~~~
+
+<br>
+
+* Space
+  * ignore it
+
+<br>
+
+~~~c
+if (Type == SPACE)
+        {
+            continue;
+        }
+~~~
+
+<br>
+
+* If the token is operand, it enters the stack
+
+<br>
+
+~~~c
+if (Type == OPERAND)
+        {
+            push(stack, createNode(Token));
+        }
+
+~~~
+
+<br>
+
+* If the token is operator, calculate operand2 (call second pop) **operator** operand1 (call first pop)
+  * atof(string) -> return double version of string
+
+<br>
+
+~~~c
+else
+        {
+            Node* topNode1 = pop(stack);
+            double operand1 = atof(topNode1->data);
+            Node* topNode2 = pop(stack);
+            double operand2 = atof(topNode2->data);
+
+            switch (Type)
+            {
+                case PLUS:
+                    result = operand2 + operand1;
+                    break;
+                case MINUS:
+                    result = operand2 - operand1;
+                    break;
+                case MULTIPLICATION:
+                    result = operand2 * operand1;
+                    break;
+                case DIVISION:
+                    result = operand2 / operand1;
+                    break;
+
+            }
+          ///
+        }
+
+~~~
+
+<br>
+
+* The calculated result enters the stack
+  * gcvt(a, b, c) : convert doulbe a -> string c (b is the number of character places)
+  * The size of c is adequate if it is 20~30 when double data convert to string
+
+<br>
+
+~~~c
+char charResult[20];
+gcvt(result, 10, charResult);
+push(stack, createNode(charResult));
+destroyNode(&topNode1);
+destroyNode(&topNode2);
+
+~~~
+
+<br>
+
+* After extracting all tokens from the postfix notation, call pop function and print its result
+
+<br>
+
+~~~c
+Node* lastNode = pop(stack);
+result = atof(lastNode->data);
+destroyNode(&lastNode);
+destroyStack(&stack);
+
+return result;
+
+~~~
+
+### Extra Knowledge
+* memset(string, 0, sizeof(string))
+  * string's initialization with 0 for all places of string
+  * don't need to worry about end of string
