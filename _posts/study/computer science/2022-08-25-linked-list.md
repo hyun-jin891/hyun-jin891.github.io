@@ -2,7 +2,7 @@
 layout: post
 title: Linked list
 description: >
-  Data Structure
+  Data Structure, 이것이 자료구조+알고리즘이다 with C언어 (reference)
 tags: [Linked list]
 use_math: true
 categories:
