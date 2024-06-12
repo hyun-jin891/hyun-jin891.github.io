@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Non-Mendelian ; Maternal Effect and Extranuclear Inheritance
+title: Non-Mendelian; Maternal Effect and Extranuclear Inheritance
 description: >
   Genetics Robert J. Brooker, Genetics Course in Yonsei (reference)
 tags: [non-mendelian inheritance]
@@ -11,7 +11,7 @@ categories:
 ---
 This posting is my note that I study the contents and write them in my style <br>
 This is the private repository where I can only review my notes<br>
-[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2024-06-10-Extensions-of-Mendelian-Inheritance.md)
+[Repository](https://github.com/hyun-jin891/hidden-post-hyunjin891-github-blog/blob/master/_posts/study/biology/2024-06-12-Non---Mendelian-%3B-Maternal-Effect-and-Extranuclear-Inheritance.md)
 
 ## Contents
 ------
