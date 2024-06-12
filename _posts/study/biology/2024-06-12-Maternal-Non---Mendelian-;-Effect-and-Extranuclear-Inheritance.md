@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Non-Mendelian;Maternal Effect and Extranuclear Inheritance
+title: Non-Mendelian ; Maternal Effect and Extranuclear Inheritance
 description: >
   Genetics Robert J. Brooker, Genetics Course in Yonsei (reference)
 tags: [non-mendelian inheritance]
