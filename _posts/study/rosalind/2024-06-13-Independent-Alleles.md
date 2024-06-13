@@ -18,7 +18,7 @@ categories:
   * 1<sup>st</sup> generation: AaBb (0<sup>th</sup> generation) x AaBb
   * n<sup>th</sup> generation: ? ((n-1)<sup>th</sup> generation) x AaBb
   * Each individual gets 2 offsprings
-  * The probability that at least N Aa Bb organisms will belong to the k<sup>th</sup> generation
+  * Goal: The probability that at least N Aa Bb organisms will belong to the k<sup>th</sup> generation
   * The genes satisfy the law of independent assorment
 
 ### My Solution
