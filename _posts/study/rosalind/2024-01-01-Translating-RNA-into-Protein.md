@@ -2,7 +2,7 @@
 layout: post
 title: Translating RNA into Protein
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category
+  A problem from rosalind "Bioinformatics Stronghold" category, String Algorithm
 tags: [rosalind problem]
 
 categories:

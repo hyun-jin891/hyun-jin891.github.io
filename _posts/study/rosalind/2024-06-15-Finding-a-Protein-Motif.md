@@ -2,7 +2,7 @@
 layout: post
 title: Finding a Protein Motif
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category
+  A problem from rosalind "Bioinformatics Stronghold" category, Web Crawling, Regular Expression, String Algorithm
 tags: [rosalind problem]
 
 categories:
@@ -283,7 +283,7 @@ We can get the fasta text through tag name of html (By.TAG_NAME)<br>
 
 Its tag name is "pre" in html<br>
 
-The fasta text consists of tag like ">sp|P01867|IGG2B_MOUSE Immunoglobulin heavy constant gamma 2B OS=Mus musculus OX=10090 GN=Ighg2b PE=1 SV=3" + enter + seq<br>
+The fasta text consists of tag like ">spㅣP01867ㅣIGG2B_MOUSE Immunoglobulin heavy constant gamma 2B OS=Mus musculus OX=10090 GN=Ighg2b PE=1 SV=3" + enter + seq<br>
 
 Loop is for extracting the sequence from the text<br>
 

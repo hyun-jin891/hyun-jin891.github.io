@@ -2,7 +2,7 @@
 layout: post
 title: Finding a Motif in DNA
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category
+  A problem from rosalind "Bioinformatics Stronghold" category, Boyer-Moore Algorithm
 tags: [rosalind problem]
 
 categories:

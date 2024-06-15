@@ -2,7 +2,7 @@
 layout: post
 title: Independent Alleles
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category
+  A problem from rosalind "Bioinformatics Stronghold" category, Probability Calculation
 tags: [rosalind problem]
 
 categories:

@@ -2,7 +2,7 @@
 layout: post
 title: Counting DNA Nucleotides
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category
+  A problem from rosalind "Bioinformatics Stronghold" category, Dictionary
 tags: [rosalind problem]
 
 categories:

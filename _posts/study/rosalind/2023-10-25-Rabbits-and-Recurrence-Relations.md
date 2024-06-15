@@ -2,7 +2,7 @@
 layout: post
 title: Rabbits and Recurrence Relations
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category
+  A problem from rosalind "Bioinformatics Stronghold" category, Dynamic Programming
 tags: [rosalind problem]
 
 categories:

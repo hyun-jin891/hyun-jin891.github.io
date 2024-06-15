@@ -2,7 +2,7 @@
 layout: post
 title: Consensus and Profile
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category
+  A problem from rosalind "Bioinformatics Stronghold" category, String Algorithm
 tags: [rosalind problem]
 
 categories:

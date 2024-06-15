@@ -2,7 +2,7 @@
 layout: post
 title: Mendel's First Law
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category
+  A problem from rosalind "Bioinformatics Stronghold" category, Probability Calculation
 tags: [rosalind problem]
 
 categories:

@@ -2,7 +2,7 @@
 layout: post
 title: Finding a Shared Motif
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category
+  A problem from rosalind "Bioinformatics Stronghold" category, Boyer-Moore Algorithm, String Algorithm, LCS
 tags: [rosalind problem]
 
 categories:
