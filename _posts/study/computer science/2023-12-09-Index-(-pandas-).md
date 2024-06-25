@@ -47,7 +47,9 @@ print(df)
 ~~~
 <br>
 
-* The order of index gonna be changed to 'Cho', 'Samoh', 'Rivera'<br>
+* The order of index gonna be changed to 'Cho', 'Samoh', 'Rivera'
+
+<br>
 
 ~~~python
 import pandas as pd
@@ -57,6 +59,7 @@ df = df.reindex(['Cho', 'Samoh', 'Rivera', 'Sanford', 'Westberry'])
 
 print(df)
 ~~~
+
 <br>
 
 * 'Sanford' and 'Westberry' are not involved in the original dataframe : They gonna be added as new index (all of elements are NaN)
@@ -80,6 +83,7 @@ df = df.sort_index(ascending=True)
 
 print(df)
 ~~~
+
 <br>
 
 * The order of index : 'Cho', 'Rivera', 'Samoh'
@@ -89,6 +93,7 @@ print(df)
 * Use "sort_values"
   * origin source changes (X) → just return
   * If we wanna change the origin dataframe, we insert "inplace=True" as a parameter
+
 <br>
 
 ~~~python
@@ -100,6 +105,7 @@ df = df.sort_values(by='math', ascending=False)
 
 print(df)
 ~~~
+
 <br>
 
 * By the value of elements in math, the order of index is 'Samoh', 'Cho', 'Rivera'
