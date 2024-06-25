@@ -58,7 +58,7 @@ df2 = pd.DataFrame([[90, 100, 85], [74, 60, 100], [65, 97, 78]], index = ["Samoh
 * Choose multiple rows
   * Double times [] & Slicing returns dataframe
     * df.loc['index0'] != df.loc[**['index0']**]
-  * **df.loc[**['index0', 'index3']**]** (return dataframe corresponding to index0 & index3)
+  * **df.loc[ ['index0', 'index3'] ]** (return dataframe corresponding to index0 & index3)
   * **df.loc['index0' : 'index3']** (return dataframe corresponding to index0 & index1 & index2 & index3)
   * **df.iloc[**[0, 3]**]** (return dataframe corresponding to first and fourth index)
   * **df.iloc[0 : 4]** (return dataframe corresponding to first, second, third, and fourth index)
@@ -70,7 +70,7 @@ df2 = pd.DataFrame([[90, 100, 85], [74, 60, 100], [65, 97, 78]], index = ["Samoh
   * **df['column1']** (return Series corresponding to column1)
   * **df.column2** (return Series corresponding to column2)
 * Choose multiple columns
-  * **df[**['column1', 'column2', 'column5']**]** (return dataframe corresponding to column1, column2, and column5)
+  * **df[ ['column1', 'column2', 'column5'] ]** (return dataframe corresponding to column1, column2, and column5)
 
 ### Choose Element
 * **df.(i)loc[row information, column information]**
@@ -78,11 +78,11 @@ df2 = pd.DataFrame([[90, 100, 85], [74, 60, 100], [65, 97, 78]], index = ["Samoh
     * **df.iloc[1, 2]** (return a single element corresponding to second index and third column)
     * **df.loc['index2', 'column2']** (return a single element corresponding to index2 and column2)
     * **df.iloc[1, 2 : 5]** (return Series corresponding to second index and third, fourth, fifth column)
-    * **df.loc['index2', **['column1', 'column3']**]** (return Series corresponding to index2 and column1, column3)
+    * **df.loc['index2', ['column1', 'column3']]** (return Series corresponding to index2 and column1, column3)
     * **df.iloc[1 : 3, 2 : 5]** (return dataframe corresponding to second, third index and third, fourth, fifth column)
-    * **df.loc['index2' : 'index4', **['column1', 'column3']**]** (return dataframe corresponding to index2, index3, index4 and column1, column3)
+    * **df.loc['index2' : 'index4', ['column1', 'column3']]** (return dataframe corresponding to index2, index3, index4 and column1, column3)
     * **df.iloc[:, 2 : 5]** (return dataframe corresponding to second index and third, fourth, fifth column)
-    * **df.loc[:, **['column1', 'column3']**]** (return dataframe corresponding to column1, column3)
+    * **df.loc[:, ['column1', 'column3']]** (return dataframe corresponding to column1, column3)
 * **df.(i)loc[**row information**][**column information**]**
 
 ### Add Row
@@ -101,7 +101,7 @@ df2 = pd.DataFrame([[90, 100, 85], [74, 60, 100], [65, 97, 78]], index = ["Samoh
 * **(Choose parts that we wanna change) = newValue**
   * Example
     * **df.iloc[1, 2] = 50** (Change the original value located on second index, thrid column to 50)
-    * **df.loc['index1', **['column2', 'column4']**] = [40, 60]** (Change the original values located on (second index, column2), (second index, column4) to 40 and 60)
+    * **df.loc['index1', ['column2', 'column4']] = [40, 60]** (Change the original values located on (second index, column2), (second index, column4) to 40 and 60)
 
 ### Transpose
 * row → column, column → row
