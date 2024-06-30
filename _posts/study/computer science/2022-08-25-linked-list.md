@@ -511,3 +511,21 @@ other methods : [Linked List](https://www.javatpoint.com/java-linkedlist)
 * Queue & Deque includes the advantages of linked list
 * If we want to access the elements → **simply using list** is efficient
 * Consequently, **list** in python has already designed for efficiently usage
+
+### Linked List vs ArrayList (Java)
+* Both are used to implement the list data structure in Java with the general array grammar
+* Evaluation
+  * Search
+    * Linked List ≒ ArrayList (Linked List will be a little bit slower than ArrayList because it is uncontinuous while ArrayList is continuous)
+  * Access
+    * Linked List < ArrayList (Linked List should use linear search)
+  * Add at head
+    * Linked List > ArrayList (ArrayList should let all elements after head move to next location)
+  * Add at tail
+    * Linked List < ArrayList (Linked List should use linear search)
+  * Remove at head
+    * Linked List > ArrayList (ArrayList should let all elements after head move to previous location)
+  * Remove at tail
+    * Linked List < ArrayList (Linked List should use linear search)
+  * Remove the element between head and tail
+    * Linked List ≒ ArrayList (Linked List will be a little bit slower than ArrayList because it is uncontinuous while ArrayList is continuous)
