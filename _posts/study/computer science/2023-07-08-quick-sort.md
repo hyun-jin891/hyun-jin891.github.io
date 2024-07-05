@@ -42,9 +42,9 @@ def quick_sort(array):
             rear_arr.append(value)
         else:
             pivot_arr.append(value)
-    if len(front_arr) == 0 and len(back_arr) == 0 and len(pivot_arr) != 0:
+    if len(front_arr) == 0 and len(rear_arr) == 0 and len(pivot_arr) != 0:
         return pivot_arr
-    return quick_sort(front_arr) + quick_sort(pivot_arr) + quick_sort(back_arr)
+    return quick_sort(front_arr) + quick_sort(pivot_arr) + quick_sort(rear_arr)
 ~~~
 
 * code Analysis<br>
