@@ -60,7 +60,7 @@ categories:
     ~~~
     Third character of each "" has period: 1
     It can be calculted through (n - 2)! / (n - 2)
-    The pool of number being able to be involved in "" goes through the initialization per (n-1)! / (n-1)
+    The pool of number being able to be involved in "" goes through the initialization per (n - 1)! / (n - 1)
 
     "123"   "124"   "132"   "134"   "142"   "143"   
     "213"   "214"   "231"   "234"   "241"   "243"   
@@ -85,7 +85,7 @@ categories:
     ~~~
     Fourth character of each "" has period: 1
     It can be calculted through (n - 3)! / (n - 3)
-    The pool of number being able to be involved in "" goes through the initialization per (n-2)! / (n-2)
+    The pool of number being able to be involved in "" goes through the initialization per (n - 2)! / (n - 2)
 
     "1234"   Poor: [4]
     "1243"   Poor: [3]
