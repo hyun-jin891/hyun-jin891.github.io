@@ -29,7 +29,7 @@ categories:
       * Case 1 (non-palindrome sequence)
         * There are a few restriction enzymes which recognize the non-palindrome sequence
         * **Condition**: The strand which has a sequence pattern also has its reverse complement
-          * **The closer its reverse complement is to the sequence pattern, the greater probability of cutting both strands is ↑** (Distance barrier between each monomer of restriction enzymes)
+          * **The closer its reverse complement is to the sequence pattern, the greater probability of cutting both strands is** (Distance barrier between each monomer of restriction enzymes)
 
         ~~~
          Sequence Pattern: 5-CㅣAAGGT-3 (non-palindrome sequence)
