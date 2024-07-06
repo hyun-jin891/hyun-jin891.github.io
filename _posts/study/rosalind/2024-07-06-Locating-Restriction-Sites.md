@@ -33,8 +33,9 @@ categories:
 
         ~~~
          Sequence Pattern: 5-CㅣAAGGT-3 (non-palindrome sequence)
+         Reverse Complement: 5-ACCTTG-3
 
-          5-.....CㅣAAGGTACCTT  G....-3    One Strand
+          5-.....CㅣAAGGTACCTT  G....-3    One Strand (It involves the reverse complement as well)
           3-.....G  TTCCATGGAAㅣC....-5    The Other Strand
 
           5-C             AAGGTACCTTG-3
