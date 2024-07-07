@@ -2,7 +2,7 @@
 layout: post
 title: Calculating Protein Mass
 description: >
-  A problem from rosalind "Bioinformatics Stronghold" category, Mathematical Periods, Python Module
+  A problem from rosalind "Bioinformatics Stronghold" category, Dictionary
 tags: [rosalind problem]
 
 categories:
