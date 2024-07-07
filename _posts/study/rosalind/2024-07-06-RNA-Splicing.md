@@ -26,16 +26,16 @@ categories:
       * I don't need to consider such a case in this rosalind problem, but I consider that case as well with my thought: "Only one of overlapped intron sequences is removed"
 
       ~~~
-      Intron: ACCT, CTTA
+       Intron: ACCT, CTTA
 
-      5-...ATGACCTTACAGCGGATTAG...-3
-              ACCT
-                CTTA
+       5-...ATGACCTTACAGCGGATTAG...-3
+               ACCT
+                 CTTA
 
-      Possible Result 1: ATGTACAGCGGATTAG
-      Possible Result 2: ATGACCAGCGGATTAG      
+       Possible Result 1: ATGTACAGCGGATTAG
+       Possible Result 2: ATGACCAGCGGATTAG      
 
-    ~~~
+       ~~~
 
   * Get the information about intron's start location and end location within a given DNA sequence through regular expression (ori_intron)
   * Through "Lookahead Assertion" and string algorithm, I get the overlapped introns (over_intron) and I am tracking which introns (ori_intron) go through overlapping with these introns (over_intron)
