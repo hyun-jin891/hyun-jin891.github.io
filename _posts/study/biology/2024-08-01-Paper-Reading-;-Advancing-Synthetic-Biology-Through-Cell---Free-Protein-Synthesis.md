@@ -2,8 +2,8 @@
 layout: post
 title: Paper Reading; Advancing Synthetic Biology through Cell-Free Protein Synthesis
 description: >
-  Paper Reading in 63<sup>th</sup> NusB (National Undergraduate Symposium on Biology, 제 63회 전국 대학생 생물학 심포지엄 참가): Synthetic Biology-Protein Engineering (Topic)
-tags: [basic microbiology]
+  Paper Reading
+tags: [paper reading]
 use_math: true
 categories:
   - study

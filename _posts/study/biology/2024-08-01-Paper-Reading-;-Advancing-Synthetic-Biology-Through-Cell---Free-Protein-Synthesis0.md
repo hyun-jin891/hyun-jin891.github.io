@@ -2,8 +2,7 @@
 layout: post
 title: Paper Reading; Cell-Free Protein Synthesis from Genomically Recoded Bacteria Enables Multisite Incorporation of Noncanonical Amino Acids
 description: >
-  Paper Reading in 63<sup>th</sup> NusB (National Undergraduate Symposium on Biology, 제 63회 전국 대학생 생물학 심포지엄 참가): Synthetic Biology-Protein Engineering (Topic)
-tags: [basic microbiology]
+  Paper Reading
 use_math: true
 categories:
   - study
