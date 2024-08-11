@@ -74,7 +74,7 @@ Modular Enzyme Assembly for Enhanced Cascade Biocatalysis and Metabolic Flux
         * RIAD(1) is linked to (RIDD-MenH)(1)
         * RIAD(2) is linked to (RIDD-MenH)(2)
     * ∴ MenD = 4, MenH = 16
-  * Assembly C has the most efficent assembly
+  * Assembly C is the most efficent assembly (high degree)
 
 ## Enzyme Assembly for Carotenoid Biosynthesis
 * Carotenoid can be used for antioxidant
