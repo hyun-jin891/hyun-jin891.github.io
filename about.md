@@ -14,6 +14,9 @@ categories:
 
 저는 연세대학교 생명시스템대학 시스템생물학과 학부생입니다. **Bioinformatics** 분야에 관심을 가지고 공부하고 있으며, 생물학 데이터 처리 및 생물학 연구에 도움을 줄 **computational tool**을 개발하는 엔지니어가 되는 것이 목표입니다.
 
+<br>
+
+본 블로그에서 작성하는 공부 포스팅은 따로 만든 private repository에 작성하여 링크만 걸어두었고, 백준이나 rosalind와 같이 제가 직접 푼 문제는 블로그에 public하게 공개하였습니다.
 
 ## My History
 
