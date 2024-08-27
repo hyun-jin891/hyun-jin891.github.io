@@ -24,23 +24,28 @@ categories:
 * 2022-2024, serve in the military as KATUSA
 
 ## Related Courses
-* General Biology I (B.S. 1-1)
-* SW Programming (B.S. 1-1)
-* General Biology II (B.S. 1-2)
-* Computer System And Physical Computing (B.S. 1-2)
-* Genetics (B.S. 2-1)
-* Cell Biology 1 (B.S. 2-1)
-* Microbiology (B.S. 2-1)
-* Object-oriented Programming (B.S. 2-1)
-* Introduction To Statistics (B.S. 2-1)
-* Introduction To Computer Science (B.S. summer)
-* Molecular Biology (planning)
+* **General Biology I (B.S. 1-1)**
+* **SW Programming (B.S. 1-1)**
+* **General Biology II (B.S. 1-2)**
+* **Computer System And Physical Computing (B.S. 1-2)**
+* **Genetics (B.S. 2-1)**
+* **Cell Biology 1 (B.S. 2-1)**
+* **Microbiology (B.S. 2-1)**
+* **Object-oriented Programming (B.S. 2-1)**
+* **Introduction To Statistics (B.S. 2-1)**
+* **Introduction To Computer Science (B.S. summer)**
+* **Molecular Biology (B.S. 2-2)**
+* **Data Structure (B.S. 2-2)**
+* **Molecular Cancer Biology (B.S. 2-2)**
+* **Cell Biology 2 (B.S. 2-2)**
+* **Artificial Intelligence Algorithm (B.S. 2-2)**
+* **Logic Circuit Design (B.S. 2-2)**
+* **Compiler Design (B.S. 2-2)**
 * Molecular Biochemistry (planning)
 * Animal Physiology (planning)
 * Experiments in Systems Biology I (planning)
 * Organic Chemistry I (planning)
 * Organic Chemistry II (planning)
-* Data Structure (planning)
 * Statistical Method (planning)
 * Plant Molecular Physiology (planning)
 * Immunology (planning)
@@ -49,7 +54,6 @@ categories:
 * Computer Architecture (planning)
 * Computer Graphics (planning)
 * Developmental Biology (planning)
-* Molecular Cancer Biology (planning)
 * System Programming (planning)
 * Discrete Structure (planning)
 * Bioinformatics (planning)
@@ -60,3 +64,4 @@ categories:
 * Computer Vision (planning)
 * Analysis Of Algorithm (planning)
 * Computer Network (planning)
+* Biostatistics (planning)
