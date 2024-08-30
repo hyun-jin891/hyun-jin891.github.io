@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Machine Learning Basic Flow with sklearn (Supervised Learning)
+title: Supervised Learning Basic Flow with sklearn (Machine Learning)
 description: >
   Machine Learning
 tags: [machine learning]
@@ -9,7 +9,7 @@ categories:
   - study
   - computer science
 ---
-### Machine Learning Basic Flow with sklearn (Supervised Learning)
+### Supervised Learning Basic Flow with sklearn (Machine Learning)
 * Basic flow with sklearn for ML
 * Examples are "Supervised Learning"
 
