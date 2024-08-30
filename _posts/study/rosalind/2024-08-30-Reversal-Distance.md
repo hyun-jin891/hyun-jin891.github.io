@@ -20,7 +20,7 @@ categories:
 
 ### My Solution
 * Sketch
-  * [Reference Paper](https://link.springer.com/article/10.1007/BF01188586): **Exact and Approximation Algorithms for Computing Reversal Distances in Genome Rearrangement** (Kececioglu, J., & Sankoff, D. (1995). Exact and approximation algorithms for sorting by reversals, with application to genome rearrangement. Algorithmica, 13(1), 180-210.)
+  * [Reference Paper](https://link.springer.com/article/10.1007/BF01188586): **Exact and Approximation Algorithms for Computing Reversal Distances in Genome Rearrangement** (Kececioglu, J., & Sankoff, D. (1995). Exact and approximation algorithms for sorting by reversals, with application to genome rearrangement. Algorithmica, 13(1), 180-210. https://doi.org/10.1007/BF01188586 )
   * Let seq1 = (4, 1, 3, 2, 5), seq2 = (3, 5, 4, 2, 1)
     * Minimum number of inversion **(seq1 → seq2)** == Minimum number of inversion **(seq2<sup>-1</sup>●seq1 → ι)**
     * seq2<sup>-1</sup>: (Index, Value) → (Value, Index)
