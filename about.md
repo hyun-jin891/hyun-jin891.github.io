@@ -20,10 +20,10 @@ categories:
 
 ## My History
 
-* 2021.03.01-present: **B.S. in Systems Biology (major) and Computer Science (double major), Yonsei University**
-* 2022.11.21-2024.05.20: **Serve in the military as KATUSA**
-* 2024.06.29-2024.09.21: **Participant and Author of Review Paper in 63<sup>th</sup> National Undergraduate Symposium on Biology**
-* 2024.08.31-present: **Member of Prometheus (Undergraduate AI Organization)**
+* **2021.03.01-present**: B.S. in Systems Biology (major) and Computer Science (double major), Yonsei University
+* **2022.11.21-2024.05.20**: Serve in the military as KATUSA
+* **2024.06.29-2024.09.21**: Participant and Author of Review Paper in 63<sup>th</sup> National Undergraduate Symposium on Biology
+* **2024.08.31-present**: Member of Prometheus (Undergraduate AI Organization)
 
 ## Related Courses
 * **General Biology I (B.S. 1-1)**
