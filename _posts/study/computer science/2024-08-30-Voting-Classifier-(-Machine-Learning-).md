@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Classification with Ensemble Learning (Machine Learning)
+title: Voting Classifier (Machine Learning)
 description: >
   Machine Learning
 tags: [machine learning]
